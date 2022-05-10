@@ -1,0 +1,20 @@
+.header {
+    padding: 60px 0;
+    position: relative;
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo-link {
+        margin-right: 30px;
+    }
+    &__block {
+        @include md {
+            display: none;
+        }
+    }
+    @include md {
+        padding: 30px 40px 25px;
+    }
+}

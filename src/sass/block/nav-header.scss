@@ -1,0 +1,151 @@
+.nav-header {
+    &__list {
+        @include list-reset;
+        display: flex;
+        & li + li {
+            margin-left: 100px;
+            @include lg {
+                margin-left: 50px;
+            }
+        }
+        & li a {
+            color: $accent;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-weight: 600;
+            @include adaptiv-font(25, 20);
+            transition: color .2s ease-in;
+            white-space: nowrap;
+        }
+        & li a:hover {
+            color: $accent-light;
+        }
+        & li a:hover + .nav-header__submenu-list {
+            visibility: visible;
+            opacity: 1;
+        }
+        & li {
+            position: relative;
+        }
+    }
+    &__submenu-list {
+        display: flex;
+        visibility: hidden;
+        @include list-reset;
+        position: absolute;
+        width: fit-content;
+        flex-direction: column;
+        background-color: $accent;
+        padding: 25px;
+        min-width: 220px;
+        top: 45px;
+        opacity: 0;
+        transition: visibility .3s, opacity .3s;
+        & li + li {
+            margin-left: 0;
+            margin-top: 20px;
+            @include lg {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+        }
+        & li {
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 3px;
+                left: 50%;
+                bottom: -10px;
+                background-color: #ffffff;
+                transition: all .1s ease;
+            }
+        }
+        & li:hover::after {
+            width: 100%;
+            left: 0;
+        }
+        & li:hover a {
+            color: #ffffff;
+        }
+        & li a {
+            color: #ffffff;
+            display: inline-block;
+            white-space: nowrap;
+            width: 100%;
+        }
+        &:hover .has-submenu {
+            color: $accent-light;
+        }
+    }
+    &__submenu-list:hover {
+        visibility: visible;
+        opacity: 1;
+    }
+    @include md {
+        display: none;
+        &.open {
+            display: block;
+            position: absolute;
+            background-color: $accent;
+            top: 90px;
+            left: 0;
+            width: 100%;
+            & .nav-header__list {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                & li + li {
+                    margin-left: 0;
+                }
+                & li {
+                    padding: 25px 0 0;
+                }
+            }
+            & a {
+                color: #ffffff;
+            }
+        }
+
+        .has-submenu:hover + &__submenu-list {
+            visibility: hidden !important;
+            opacity: 0 !important;
+        }
+        
+        .has-submenu.open + .nav-header__submenu-list {
+            position: initial;
+            width: 100%;
+            visibility: visible;
+            opacity: 1;
+            background-color: #ffffff;
+            padding: 25px 0;
+            & li {
+                padding: 10px 0 !important;
+                &::after {
+                    display: none;
+                }
+            }
+            & li + li {
+                margin-top: 0;
+            }
+            & a {
+                color: $accent;
+                & br {
+                    display: none;
+                }
+                
+            }
+            & li:hover a {
+                color: $accent-light;
+                
+            }
+        }
+        & .has-submenu {
+            display: inline-block;
+            width: 100%;
+            padding-bottom: 20px;
+        }
+    }
+}
+

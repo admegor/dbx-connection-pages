@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заголовок</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="../js/main.js" defer></script>
+</head>
+
+<body>
+
+    @@include("html/chunk/header.html")
+    <main class="main">
+        <section class="ecosystem">
+            <div class="container">
+                <h1 class="ecosystem__title page-title">Explore our <span>ecosystem</span></h1>
+                <div class="ecosystem__content blocks">
+                    <div class="blocks__item-wrap blocks__item-wrap--red">
+                        <a class="blocks__item" href="#">
+                            <div class="blocks__item-inner">
+                                <div class="blocks__image-wrap">
+                                    <img class="blocks__image" src="img/ecosystem-computer.svg" alt="ecosystem-computer"/>
+                                </div>
+                                <h2 class="blocks__title">Develop</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="blocks__item-wrap blocks__item-wrap--grey">
+                        <a class="blocks__item" href="#">
+                            <div class="blocks__item-inner">
+                                <div class="blocks__image-wrap">
+                                    <img class="blocks__image" src="img/ecosystem-phone.svg" alt="ecosystem-computer"/>
+                                </div>
+                                <h2 class="blocks__title">Mobile App</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="blocks__item-wrap blocks__item-wrap--yellow">
+                        <a class="blocks__item" href="#">
+                            <div class="blocks__item-inner">
+                                <div class="blocks__image-wrap">
+                                    <img class="blocks__image" src="img/ecosystem-tokenisation.svg" alt="ecosystem-computer"/>
+                                </div>
+                                <h2 class="blocks__title">Tokenisation</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="blocks__item-wrap blocks__item-wrap--black">
+                        <a class="blocks__item" href="#">
+                            <div class="blocks__item-inner">
+                                <div class="blocks__image-wrap">
+                                    <img class="blocks__image" src="img/ecosystem-bridge.svg" alt="ecosystem-computer"/>
+                                </div>
+                                <h2 class="blocks__title">Bridge</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="blocks__item-wrap blocks__item-wrap--pink">
+                        <a class="blocks__item" href="#">
+                            <div class="blocks__item-inner">
+                                <div class="blocks__image-wrap">
+                                    <img class="blocks__image" src="img/ecosystem-explorer.svg" alt="ecosystem-computer"/>
+                                </div>
+                                <h2 class="blocks__title">Block Explorer</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="blocks__item-wrap blocks__item-wrap--accent">
+                        <a class="blocks__item" href="#">
+                            <div class="blocks__item-inner">
+                                <div class="blocks__image-wrap">
+                                    <img class="blocks__image" src="img/ecosystem-computer2.svg" alt="ecosystem-computer"/>
+                                </div>
+                                <h2 class="blocks__title">Stable tokens</h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include("html/chunk/footer.html")
+
+</body>
+
+</html>

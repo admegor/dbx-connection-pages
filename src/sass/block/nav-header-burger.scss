@@ -1,0 +1,47 @@
+.nav-header-burger {
+    display: none;
+    @include md {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        padding: 0;
+        & span {
+            background-color: $accent;
+            width: 20px;
+            height: 3px;
+            display: block;
+            font-size: 0;
+            position: absolute;
+            left: calc(50% - 10px);
+            top: 14px;
+        }
+        &::before,
+        &::after {
+            transition: top .2s ease;
+            content: "";
+            position: absolute;
+            left: calc(50% - 10px);
+            top: 6px;
+            width: 20px;
+            height: 3px;
+            background-color: $accent;
+        }
+        &::after {
+            top: 22px;
+        }
+    }
+    &.active {
+        & span {
+            opacity: 0;
+        }
+        &::before {
+            transform: rotate(45deg);
+            top: 14px;
+        }
+        &::after {
+            transform: rotate(-45deg);
+            top: 14px;
+        }
+    }
+}
