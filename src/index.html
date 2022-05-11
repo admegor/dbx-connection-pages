@@ -6,12 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Заголовок</title>
+    <link rel="stylesheet" href="css/choices.min.css">
     <link rel="stylesheet" href="css/main.min.css">
-    <script src="../js/main.js" defer></script>
 </head>
 
 <body>
-
+    <style type="text/css">
+        .svg-dc-dims { width: 25px; height: 19px; }
+        .svg-tg-dims { width: 22px; height: 21px; }
+        .svg-tw-dims { width: 23px; height: 20px; }
+        .svg-yt-dims { width: 23px; height: 17px; }
+    </style>
+    
     @@include("html/chunk/header.html")
     <main class="main">
         <section class="ecosystem">
@@ -83,7 +89,8 @@
         </section>
     </main>
     @@include("html/chunk/footer.html")
-
+    
+    <script src="../js/main.js" defer></script>
 </body>
 
 </html>

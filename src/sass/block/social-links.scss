@@ -1,0 +1,26 @@
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    display: flex;
+    &__item + &__item {
+        margin-left: 15px;
+    }
+    &__item {
+        width: 40px;
+        height: 40px;
+    }
+    & &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        margin-bottom: 0;
+        & picture {
+            line-height: 0;
+        }
+    }
+}

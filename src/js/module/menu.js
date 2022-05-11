@@ -4,7 +4,8 @@ function menu() {
     const submenuLists = document.querySelectorAll(".has-submenu");
     
 
-    burgerBtn.addEventListener('click', () => {
+    burgerBtn.addEventListener('click', (el) => {
+        el.preventDefault();
         burgerBtn.classList.toggle('active');
         if (burgerBtn.classList.contains('active')) {
             navHeader.classList.add('open');
@@ -14,7 +15,8 @@ function menu() {
     }) 
     
     for (let submenuList of submenuLists) {
-        submenuList.addEventListener('click', () => {
+        submenuList.addEventListener('click', (e) => {
+            e.preventDefault();
             for (let i = 0; i < submenuLists.length; i++) {
                 console.log(submenuLists[i]);
                 if (submenuLists[i].classList.contains('open')) {

@@ -35,7 +35,7 @@ const watcher = () => {
 // Production
 const build = series(
     clear,
-    parallel(html, scss, js, img, font)
+    parallel(html, scss, js, img, font, svgsprite)
 );
 
 const dev = series(

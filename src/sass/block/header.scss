@@ -8,13 +8,20 @@
     }
     &__logo-link {
         margin-right: 30px;
+        min-width: 86px;
     }
     &__block {
-        @include md {
+        display: flex;
+        margin-left: 20px;
+        @include lg {
             display: none;
         }
     }
+    
     @include md {
         padding: 30px 40px 25px;
+    }
+    &__block-contact {
+        margin-right: 20px;
     }
 }

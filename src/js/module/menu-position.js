@@ -10,11 +10,7 @@ function submenuShift() {
         listChild.style.left = `-${moveChild}px`;
     }
 }
-
-
-
 submenuShift();
-
 
 window.addEventListener('resize', () => {
     submenuShift();
