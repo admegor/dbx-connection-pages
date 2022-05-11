@@ -1,7 +1,7 @@
 .blocks {
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 493px));
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 493px);
     row-gap: 20px;
     column-gap: 20px;
     &__item-wrap {
@@ -55,12 +55,51 @@
     }
     @include lg {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 460px);
+    }
+    @include md {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+.business .blocks {
+    grid-template-columns: repeat(3, minmax(200px, 493px));
+    grid-template-rows: repeat(1, minmax(200px, 493px));
+    @include lg {
+        &__item-wrap {
+            padding: 0 20px 30px;
+        }            
     }
     @include md {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, minmax(348px, 1fr));
-        // display: flex;
-        // flex-direction: column;
+        grid-template-rows: repeat(3, minmax(348px, 1fr));
+        &__item-wrap {
+            height: 348px;
+        }
+        &__image-wrap {
+            display: block;
+            height: 275px;
+            margin: 0 auto;
+            padding: 20px 0;
+            & img {
+                max-height: 250px;
+            }
+        }
     }
+}
+
+.ecosystem--SBX-smart .blocks {
+    grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 500px);
+        &__image-wrap {
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        @include lg {
+            &__item-wrap {
+                padding: 0 20px 30px;
+            }            
+        }
 }
