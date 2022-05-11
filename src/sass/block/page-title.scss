@@ -8,4 +8,10 @@
     & span {
         color: $accent;
     }
+    @include lg {
+        margin-bottom: 80px;
+    }
+    @include md {
+        margin-bottom: 50px;
+    }
 }
