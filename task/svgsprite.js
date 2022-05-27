@@ -12,7 +12,7 @@ const svgsprite = () => {
     return src(path.svgSprite.src, {})
         .pipe(gulpSvgSprite({
             mode: {
-                stack: {
+                defs: {
                     sprite: `../icons/icons.svg`,
                     example: true
                 }

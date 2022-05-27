@@ -1,7 +1,7 @@
 .blocks {
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 493px));
-    grid-template-rows: repeat(2, 493px);
+    grid-template-rows: repeat(2, minmax(300px, 493px));
     row-gap: 20px;
     column-gap: 20px;
     &__item-wrap {
