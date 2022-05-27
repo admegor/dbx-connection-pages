@@ -1,0 +1,74 @@
+.promo {
+    height: 100vh;
+    @include md {
+        height: initial;
+        margin-bottom: 80px;
+    }
+    &__container {
+        height: 100%;
+    }
+    &__wrap {
+        display: flex;
+        height: 100%;
+        @include md {
+            flex-direction: column;
+        }
+    }
+    &__content {
+        margin-top: 10%;
+        margin-right: 8%;
+        width: 56%;
+        @include md {
+            order: 2;
+            width: 100%;
+            margin: 0;
+        }
+    }
+    &__title {
+        color: #000;
+        font-weight: 700;
+        margin-bottom: 40px;
+        @include adaptiv-font(64, 28)
+    }
+    &__subtitle {
+        margin: 0;
+        font-weight: 500;
+        @include adaptiv-font(20, 18);
+        font-weight: 400;
+        color: rgba(38, 38, 38, 0.7);
+        margin-bottom: 60px;
+        & span {
+            font-weight: 500;
+        }
+    }
+    &__button {
+        font-size: 22px;
+    }
+    &__image-wrap {
+        margin-right: 5%;
+        @include md {
+            order: 1;
+            margin-right: 0;
+            margin: 0 auto 45px;
+        }
+    }
+    @include md {
+        &__image {
+            // max-width: 400px;
+        }
+        &__image-inner {
+            margin: 0 10%;
+            max-width: 400px;
+        }
+        &__title {
+            margin-bottom: 20px;
+        }
+        &__button {
+            width: 100%;
+            text-align: center;
+        }
+        &__subtitle {
+            margin-bottom: 40px;
+        }
+    }
+}

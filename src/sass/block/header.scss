@@ -13,6 +13,7 @@
     &__block {
         display: flex;
         margin-left: 20px;
+        align-items: center;
         @include lg {
             display: none;
         }

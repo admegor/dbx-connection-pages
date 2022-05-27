@@ -1,11 +1,14 @@
 .blocks {
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 493px));
-    grid-template-rows: repeat(2, minmax(300px, 493px));
+    grid-template-rows: repeat(2, minmax(300px, 1fr));
     row-gap: 20px;
     column-gap: 20px;
     &__item-wrap {
-        padding: 0 50px 40px;        
+        padding: 0 50px 40px;
+        @include md {
+            padding:  0 30px 40px;
+        }
         color: #ffffff;
         &--red {
             background-color: $red;

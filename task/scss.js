@@ -33,11 +33,11 @@ const scss = () => {
     .pipe(shorthand())
     .pipe(groupCssMediaQueries())
     .pipe(size({ title: "main.css" }))
-    .pipe(dest(path.scss.dest, { sourcemaps: true }))
+    .pipe(dest(path.scss.dest))
     .pipe(rename({ suffix: ".min" }))
     .pipe(csso())
     .pipe(size({ title: "main.min.css" }))
-    .pipe(dest(path.scss.dest, { sourcemaps: true }));
+    .pipe(dest(path.scss.dest));
 }
 
 module.exports = scss;

@@ -60,8 +60,8 @@ $maxWidth: 1550;
 
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
-    $maxWidth: $maxWidth - 320;
-    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+    $maxWidth: $maxWidth - 428;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 428px) / #{$maxWidth}));
     @include desktop-min {
         font-size: #{$pcSize + px};
     }
