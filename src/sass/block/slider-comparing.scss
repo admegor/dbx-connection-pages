@@ -1,0 +1,17 @@
+.slider-comparing {
+    display: flex;
+    &__progress-bar-wrap {
+        position: absolute;
+        width: 200px;
+        height: 3px;
+        background-color: #D0D2D3;
+        top: -3px;
+        left: 0;
+    }
+    &__progress-bar {
+        transition: all .2s ease-in;
+        width: 33.333%;
+        height: 100%;
+        background-color: $accent;
+    }
+}

@@ -1,0 +1,61 @@
+.archive-article {
+    position: relative;
+    &__image-link {
+        position: relative;
+        margin-bottom: 14px;
+        display: block;
+    }
+    &__image {
+        height: 290px;
+        background-image: url("../../img/article-1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &__date {
+        @include adaptiv-font(20, 16);
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    &__title {
+        margin: 0;
+        line-height: 1;
+    }
+    &__title-link {
+        @include adaptiv-font(25, 18);
+        text-decoration: none;
+        font-weight: 600;
+        color: $accent-dark;
+    }
+    &__title-link:visited {
+        color: inherit;
+    }
+    &__title-link:hover {
+        color: $accent;
+    }
+    &__tags {
+        @include list-reset;
+        display: flex;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    &__tag:not(:first-child) {
+        margin-left: 10px;
+    }
+    &__tag span {
+        display: inline-block;
+        
+        font-size: 18px;
+        color: $accent;
+        background-color: #fff;
+
+        padding: .3em .7em;
+    }
+    @include md {
+        // width: 335px;
+        & + & {
+            margin-left: 20px;
+        }
+    }
+}

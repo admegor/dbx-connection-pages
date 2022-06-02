@@ -1,0 +1,74 @@
+.arrow-icon {
+    position: relative;
+    width: 66px;
+    height: 3px;
+    transition: all .2s ease-in;
+    &__wrap {
+        position: relative;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 3px;
+        background-color: $accent;
+        transform: rotate(45deg);
+        top: -5px;
+        right: -1px;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 3px;
+        background-color: $accent;
+        transform: rotate(-45deg);
+        top: 5px;
+        right: -1px;
+    }
+    &--accent {
+        background-color: $accent;
+    }
+    &--yt {
+        background-color: #E84142;
+        position: absolute;
+        &::before {
+            background-color: #E84142;
+        }
+        &::after {
+            background-color: #E84142;
+        }
+    }
+    &--tg,
+    &--tw {
+        position: absolute;
+        background-color: #367DFF;
+        &::before {
+            background-color: #367DFF;
+        }
+        &::after {
+            background-color: #367DFF;
+        }
+    }
+    &--dc {
+        position: absolute;
+        color: $accent;
+        background-color: $accent;
+        &::before {
+            background-color: $accent;
+        }
+        &::after {
+            background-color: $accent;
+        }
+    }
+    &--rl {
+        background-color: #C1A9E0;
+        &::before {
+            background-color: #C1A9E0;
+        }
+        &::after {
+            background-color: #C1A9E0;
+        }
+
+    }
+}

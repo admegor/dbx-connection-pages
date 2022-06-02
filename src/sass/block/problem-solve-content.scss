@@ -1,0 +1,89 @@
+.problem-solve-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    grid-template-rows: 320px;
+    grid-gap: 20px;
+    grid-template-areas: 
+        ".     block1 block2"
+        "block3 block4 block5";
+        @include lg {
+            display: flex;
+        }
+    &__item {
+        padding: 30px;
+        transition: all .2s ease-in;
+        z-index: 1;
+        cursor: pointer;
+        & svg {
+            margin-bottom: 20px;
+        }
+        &--transaction-speed {
+            grid-area: block1;
+            background-color: rgba(122, 24, 213, 0.1);
+            &:hover {
+                background-color: rgba(122, 24, 213, 0.3);
+            }
+        }
+        &--fundamentality {
+            grid-area: block2;
+            background-color: rgba(232, 65, 65, 0.1);
+            &:hover {
+                background-color: rgba(232, 65, 65, 0.3);
+            }
+        }
+        &--investment-attractiveness {
+            grid-area: block3;
+            background-color: rgba(255, 173, 40, 0.1);
+            &:hover {
+                background-color: rgba(255, 173, 40, 0.3);
+            }
+        }
+        &--scalability {
+            grid-area: block4;
+            background-color: rgba(74, 188, 36, 0.1);
+            &:hover {
+                background-color: rgba(74, 188, 36, 0.3);
+            }
+        }
+        &--low-fees {
+            grid-area: block5;
+            background-color: rgba(225, 106, 233, 0.1);
+            &:hover {
+                background-color: rgba(225, 106, 233, 0.3);
+            }
+        }
+        @include lg {
+            min-width: 325px;
+        }
+    }
+    &__title {
+        margin: 0;
+        color: $accent-dark;
+        font-weight: 700;
+        font-size: 26px;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 20px;
+        color: $accent-dark;
+        margin: 0;
+        @include lg {
+            font-size: 18px;
+        }
+    }
+    @include lg {
+        &__item {
+            max-width: 325px;
+            height: auto;
+            &:not(:first-child) {
+                margin-left: 20px;
+            }
+        }
+        & .slick-track {
+            display: flex;
+            min-width: 0;
+        }
+    }
+}

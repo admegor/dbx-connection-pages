@@ -1,0 +1,114 @@
+.faqs {
+    min-height: 750px;
+    margin-bottom: 100px;
+    @include md {
+        margin-bottom: 80px;
+        min-height: initial;
+    }
+    &__inner {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        @include md {
+            margin-bottom: 40px;
+        }
+    }
+    &__view-all {
+        margin-right: 17px;
+        @include adaptiv-font(26, 20);
+        font-weight: 600;
+        @include md {
+            font-weight: 500;
+        }
+    }
+    &__subtitle-wrap {
+        display: inline-flex;
+        text-decoration: none;
+        align-items: center;
+        & svg {
+            @include lg {
+                width: 34px;
+            }
+        }
+    }
+    &__subtitle-wrap:hover .arrow-icon {
+        width: 90px;
+    }
+    &__title {
+        text-transform: uppercase;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+    &__content-item {
+        border: 2px solid $accent;
+        cursor: pointer;
+        background-color: #fff;
+    }
+    &__content-item + &__content-item {
+        margin-top: 10px;
+    }
+    &__content-title {
+        @include adaptiv-font(25, 20);
+        font-weight: 600;
+        padding: 20px 90px 20px 30px;
+        position: relative;
+        &::after {
+            transition: all .4s ease;
+            content: "";
+            position: absolute;
+            width: 21px;
+            height: 11px;
+            background: url("../../img/accordion-arrow.svg") no-repeat center;
+            top: calc(50% - 5px);
+            right: 20px;
+        }
+    }
+    &__content-item.open-accordion &__content-title::after {
+        transform: rotate(180deg);
+        opacity: .4;
+    }
+    &__content-answer {
+        padding: 10px 60px 20px;
+        font-weight: 400;
+        @include adaptiv-font(20, 18);
+        display: none;
+    }
+    &__content-inner {
+        max-width: 1000px;
+        margin-left: auto;
+        z-index: 1;
+    }
+    &__content-wrap {
+        position: relative;
+    }
+    &__decotate {
+        position: absolute;
+        @include lg {
+            display: none;
+        }
+    }
+    &__square {
+        width: 280px;
+        height: 277px;
+        position: absolute;
+        &--1 {
+            background-color: $accent;
+            top: 25px;
+            z-index: -1;
+        }
+        &--2 {
+            background-color: $pink;
+            top: 170px;
+            left: 140px;
+            z-index: -2;
+        }
+        &--3 {
+            background-color: $black;
+            top: 315px;
+            left: 281px;
+            z-index: -3;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.problem-solve {
+    padding-bottom: 200px;
+    @include md {
+        padding-bottom: 80px;
+    }
+    &__title {
+        max-width: 43%;
+        margin-bottom: 40px;
+        @include lg {
+            max-width: 100%;
+        }
+    }
+    
+    &__subtitle-wrap {
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 50px;
+        & svg {
+            @include lg {
+                width: 34px;
+            }
+        }
+    }
+    &__subtitle-wrap:hover .arrow-icon {
+        width: 90px;
+    }
+    &__subtitle {
+        margin: 0 20px;
+        text-transform: capitalize;
+    }
+    &__container {
+        position: relative;
+    }
+    &__content-wrap {
+        margin-left: 100px;
+        @include lg {
+            margin-left: 0;
+        }
+    }
+    &__content {
+        max-width: 1135px;
+        margin-left: auto;
+        @include lg {
+            max-width: 100%;
+        }
+    }
+    &__title-wrap {
+        position: absolute;
+        width: 100%;
+        @include lg {
+            position: initial;
+        }
+    }
+}

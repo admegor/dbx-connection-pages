@@ -1,0 +1,42 @@
+.blog {
+    background-color: #FBF8FF;
+    padding: 160px 0 188px;
+    @include md {
+        padding: 80px 0 80px;
+    }
+    &__inner {
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: space-between;
+        @include md {
+            margin-bottom: 40px;
+        }
+    }
+    &__view-all {
+        margin: 0;
+        margin-right: 17px;
+        @include adaptiv-font(26, 20);
+        font-weight: 600;
+        @include md {
+            font-weight: 500;
+        }
+    }
+    &__subtitle-wrap {
+        display: inline-flex;
+        text-decoration: none;
+        align-items: center;
+        margin-bottom: 50px;
+        & svg {
+            @include lg {
+                width: 34px;
+            }
+        }
+    }
+    &__subtitle-wrap:hover .arrow-icon {
+        width: 90px;
+    }
+    & .slick-track {
+        display: flex;
+        min-width: 0;
+    }
+}

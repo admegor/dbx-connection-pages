@@ -1,0 +1,43 @@
+.partners {
+    padding-bottom: 430px;
+    position: relative;
+    @include md {
+        padding-bottom: 200px;
+    }
+    &__title {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    &__list {
+        @include list-reset;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 150px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        overflow: -moz-scrollbars-none;
+        &::-webkit-scrollbar { 
+            width: 0; 
+        }
+    }
+    &__item + &__item {
+        margin-left: 90px;
+        @include lg {
+            margin-left: 50px;
+        }
+        @include md {
+            margin-left: 30px;
+        }
+    }
+    &__item {
+        display: block;
+        min-width: fit-content;
+    }
+    &__link {
+        display: block;
+        min-width: fit-content;
+        width: 40%;
+    }
+}

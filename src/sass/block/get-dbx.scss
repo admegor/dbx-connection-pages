@@ -1,0 +1,193 @@
+.get-dbx {
+    padding: 170px 0 230px;
+    @include md {
+        padding: 80px 0;
+    }
+    &__title {
+        margin-bottom: 50px;
+        text-transform: uppercase;
+    }
+    &__content {
+        display: grid;
+        row-gap: 10px;
+        column-gap: 20px;
+        grid-template-columns: repeat(auto-fit,minmax(385px,1fr));
+        grid-template-rows: repeat(160px);
+    }
+    &__img-wrap {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+    }
+    &__item {
+        padding: 30px 10px 30px 50px;
+        cursor: pointer;
+        transition: all .2s ease;
+        @include md {
+            padding: 15px 30px;
+        }
+        background-repeat: no-repeat;
+        background-position: center center;
+        &--bitforex {
+            background-color: #7E44FE;
+            border: 4px solid #7E44FE;
+            & .get-dbx__img-wrap {
+                background-image: url("../../img/get-dbx-bitforex.svg");
+            }
+            &:hover {
+                background-color: #fff;
+                & h3 {
+                    color: #7E44FE;
+                }
+                & .get-dbx__img-wrap {
+                    background-image: url("../../img/get-dbx-bitforex-active.svg");
+                }
+            }
+        }
+        &--bitmart {
+            background-color: $green;
+            border: 4px solid $green;
+            & .get-dbx__img-wrap {
+                background-image: url("../../img/get-dbx-bitmart.svg");
+            }
+            &:hover {
+                background-color: #fff;
+                & h3 {
+                    color: $green;
+                }
+                & .get-dbx__img-wrap {
+                    background-image: url("../../img/get-dbx-bitmart-active.svg");
+                }
+            }
+        }
+        &--lbank {
+            background-color: $yellow;
+            border: 4px solid $yellow;
+            & .get-dbx__img-wrap {
+                background-image: url("../../img/get-dbx-lbank.svg");
+            }
+            &:hover {
+                background-color: #fff;
+                & h3 {
+                    color: $yellow;
+                }
+                & .get-dbx__img-wrap {
+                    background-image: url("../../img/get-dbx-lbank-active.svg");
+                }
+            }
+        }
+        &--latoken {
+            background-color: $pink;
+            border: 4px solid $pink;
+            & .get-dbx__img-wrap {
+                background-image: url("../../img/get-dbx-latoken.svg");
+            }
+            &:hover {
+                background-color: #fff;
+                & h3 {
+                    color: $pink;
+                }
+                & .get-dbx__img-wrap {
+                    background-image: url("../../img/get-dbx-latoken-active.svg");
+                }
+            }
+        }
+        &--probit {
+            background-color: $black;
+            border: 4px solid $black;
+            & .get-dbx__img-wrap {
+                background-image: url("../../img/get-dbx-probit.svg");
+            }
+            &:hover {
+                background-color: #fff;
+                & h3 {
+                    color: $black;
+                }
+                & .get-dbx__img-wrap {
+                    background-image: url("../../img/get-dbx-probit-active.svg");
+                }
+            }
+        }
+        &--whitebit {
+            background-color: $red;
+            border: 4px solid $red;
+            & .get-dbx__img-wrap {
+                background-image: url("../../img/get-dbx-whitebit.svg");
+            }
+            &:hover {
+                background-color: #fff;
+                & h3 {
+                    color: $red;
+                }
+                & .get-dbx__img-wrap {
+                    background-image: url("../../img/get-dbx-whitebit-active.svg");
+                }
+            }
+        }
+        &--pancakeswap {
+            background-color: $bubblegum;
+            border: 4px solid $bubblegum;
+            & .get-dbx__img-wrap {
+                background-image: url("../../img/get-dbx-pancakeswap.svg");
+            }
+            &:hover {
+                background-color: #fff;
+                & h3 {
+                    color: $bubblegum;
+                }
+                & .get-dbx__img-wrap {
+                    background-image: url("../../img/get-dbx-pancakeswap-active.svg");
+                }
+            }
+        }
+        &--coinsbit {
+            background-color: $accent;
+            border: 4px solid $accent;
+            & .get-dbx__img-wrap {
+                background-image: url("../../img/get-dbx-coinsbit.svg");
+            }
+            &:hover {
+                background-color: #fff;
+                & h3 {
+                    color: $accent;
+                }
+                & .get-dbx__img-wrap {
+                    background-image: url("../../img/get-dbx-coinsbit-active.svg");
+                }
+            }
+        }
+        &--uniswap {
+            background-color: $grey-dbx;
+            border: 4px solid $grey-dbx;
+            & .get-dbx__img-wrap {
+                background-image: url("../../img/get-dbx-uniswap.svg");
+            }
+            &:hover {
+                background-color: #fff;
+                & h3 {
+                    color: $grey-dbx;
+                }
+                & .get-dbx__img-wrap {
+                    background-image: url("../../img/get-dbx-uniswap-active.svg");
+                }
+            }
+        }
+    }
+    &__item-inner {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    &__item-title {
+        margin: 0;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    &__item-inner svg {
+        margin-right: 32px;
+        min-width: 100px;
+    }
+    &__item-inner svg path {
+        fill: #fff;
+    }
+}

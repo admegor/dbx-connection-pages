@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    @@include("html/chunk/svg-sprite.html")    
+    @@include("html/chunk/svg-sprite.html")
     @@include("html/chunk/header.html")
     <main class="main">
         <section class="promo">
@@ -32,6 +32,7 @@
                 </div>
             </div>
         </section>
+        
         <section class="ecosystem">
             <div class="container">
                 <h2 class="ecosystem__title page-title">Explore our <span>ecosystem</span></h1>
@@ -115,24 +116,446 @@
         <section class="comparing">
             <div class="container">
                 <h2 class="comparing__title page-title">Compairing DBX Smart Network to other blockchains</h2>
-                <div class="comparing-table">
-                    <div class="comparing-table__tr">
-                        <div class="comparing-table__coin comparing-table__coin--void"></div>
-                        <div class="comparing-table__coin comparing-table__coin--ethereum"></div>
-                        <div class="comparing-table__coin comparing-table__coin--bitcoin"></div>
-                        <div class="comparing-table__coin comparing-table__coin--solana"></div>
-                        <div class="comparing-table__coin comparing-table__coin--polygon"></div>
-                        <div class="comparing-table__coin comparing-table__coin--dbx"></div>
+                <div class="comparing-table--mobile">
+                    <div class="comparing-table">
+                        <div class="comparing-table__slider-before">
+                            <div class="comparing-table__tr">
+                                <div class="comparing-table__cell comparing-table__cell--th">&nbsp;</div>
+                                <div class="comparing-table__cell comparing-table__cell--ethereum">Ethereum</div>
+                                <div class="comparing-table__cell comparing-table__cell--bitcoin">Bitcoin</div>
+                                <div class="comparing-table__cell comparing-table__cell--solana">Solana</div>
+                                <div class="comparing-table__cell comparing-table__cell--polygon">Polygon</div>
+                                <div class="comparing-table__cell comparing-table__cell--dbx">DBX Smart Network</div>
+                            </div>
+                        </div>
+                        <div class="comparing-table__slider">
+                            <div class="slider-comparing">
+                                <div class="comparing-table__tr slider-comparing__item">
+                                    <div class="comparing-table__cell comparing-table__cell--th">Transaction cost</div>
+                                    <div class="comparing-table__cell">$15</div>
+                                    <div class="comparing-table__cell">$3</div>
+                                    <div class="comparing-table__cell">$0.00025</div>
+                                    <div class="comparing-table__cell">$0.01</div>
+                                    <div class="comparing-table__cell comparing-table__cell--dbx">$0,000001</div>
+                                </div>
+                                <div class="comparing-table__tr slider-comparing__item">
+                                    <div class="comparing-table__cell comparing-table__cell--th">Transaction speed</div>
+                                    <div class="comparing-table__cell">6 min</div>
+                                    <div class="comparing-table__cell">60 min</div>
+                                    <div class="comparing-table__cell">5 min</div>
+                                    <div class="comparing-table__cell">5 min</div>
+                                    <div class="comparing-table__cell comparing-table__cell--dbx">1 sec</div>
+                                </div>
+                                <div class="comparing-table__tr slider-comparing__item">
+                                    <div class="comparing-table__cell comparing-table__cell--th">Savings in month</div>
+                                    <div class="comparing-table__cell">0.34%</div>
+                                    <div class="comparing-table__cell">–</div>
+                                    <div class="comparing-table__cell">0.43%</div>
+                                    <div class="comparing-table__cell">0.76%</div>
+                                    <div class="comparing-table__cell comparing-table__cell--dbx">3%</div>
+                                </div>
+                            </div>
+                            <div class="slider-comparing__progress-bar-wrap">
+                                <div class="slider-comparing__progress-bar"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="comparing-table__tr"></div>
-                    <div class="comparing-table__tr"></div>
-                    <div class="comparing-table__tr"></div>
+                </div>
+                <div class="comparing-table--desktop">
+                    <table class="comparing-table">
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>Transaction cost</th>
+                            <th>Transaction speed</th>
+                            <th>Savings in month</th>
+                        </tr>
+                        <tr>
+                            <td class="comparing-table--ethereum">Ethereum</td>
+                            <td>$15</td>
+                            <td>6 min</td>
+                            <td>0.34%</td>
+                        </tr>
+                        <tr>
+                            <td class="comparing-table--bitcoin">Bitcoin</td>
+                            <td>$3</td>
+                            <td>60 min</td>
+                            <td>–</td>
+                        </tr>
+                        <tr>
+                            <td class="comparing-table--solana">Solana</td>
+                            <td>$0.00025</td>
+                            <td>5 min</td>
+                            <td>0.43%</td>
+                        </tr>
+                        <tr>
+                            <td class="comparing-table--polygon">Polygon</td>
+                            <td>$0.01</td>
+                            <td>5 min</td>
+                            <td>0.76%</td>
+                        </tr>
+                        <tr>
+                            <td class="comparing-table--dbx">DBX Smart Network</td>
+                            <td>$0,000001</td>
+                            <td>1 sec</td>
+                            <td>3%</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </section>
+
+        <section class="problem-solve">
+            <div class="container problem-solve__container">
+                <div class="problem-solve__title-wrap">
+                    <h2 class="problem-solve__title page-title">What problem does DBX solve?</h2>
+                    <div class="problem-solve__subtitle-wrap">
+                        <svg viewBox="0 0 54 50" class="svg-icon-fox-dims">
+                            <use xlink:href="#icon-fox"></use>
+                        </svg>
+                        <p class="problem-solve__subtitle accent-text">Add a network</p>
+                        <div class="arrow-icon arrow-icon--accent"></div>
+                    </div>
+                </div>
+                <div class="problem-solve__content-wrap">
+                    <div class="problem-solve__content problem-solve-content">
+                        <div class="problem-solve-content__item problem-solve-content__item--transaction-speed">
+                            <svg viewBox="0 0 31 73" class="svg-icon-transaction-speed-dims">
+                                <use xlink:href="#icon-transaction-speed"></use>
+                            </svg>
+                            <h3 class="problem-solve-content__title">Transaction speed</h3>
+                            <p class="problem-solve-content__text">Transactions speed faster than 80% blockchains</p>
+                        </div>
+                        <div class="problem-solve-content__item problem-solve-content__item--fundamentality">
+                            <svg viewBox="0 0 51 72" class="svg-icon-fundamentality-dims">
+                                <use xlink:href="#icon-fundamentality"></use>
+                            </svg>
+                            <h3 class="problem-solve-content__title">Fundamentality</h3>
+                            <p class="problem-solve-content__text">PoA blockchain based ecosystem</p>
+                        </div>
+                        <div class="problem-solve-content__item problem-solve-content__item--investment-attractiveness">
+                            <svg viewBox="0 0 66 90" class="svg-icon-investment-attractiveness-dims">
+                                <use xlink:href="#icon-investment-attractiveness"></use>
+                            </svg>
+                            <h3 class="problem-solve-content__title">Investment attractiveness</h3>
+                            <p class="problem-solve-content__text">Transactions speed faster than 80% blockchains</p>
+                        </div>
+                        <div class="problem-solve-content__item problem-solve-content__item--scalability">
+                            <svg viewBox="0 0 47 87" class="svg-icon-scalability-dims">
+                                <use xlink:href="#icon-scalability"></use>
+                            </svg>
+                            <h3 class="problem-solve-content__title">Scalability</h3>
+                            <p class="problem-solve-content__text">Proof of Authority</p>
+                        </div>
+                        <div class="problem-solve-content__item problem-solve-content__item--low-fees">
+                            <svg viewBox="0 0 34 85" class="svg-icon-low-fees-dims">
+                                <use xlink:href="#icon-low-fees"></use>
+                            </svg>
+                            <h3 class="problem-solve-content__title">Low fees</h3>
+                            <p class="problem-solve-content__text">Commissions on the DBX network are among the top 10 cryptocurrencies for the lowest transaction cost</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog">
+            <div class="container">
+                <div class="blog__inner">
+                    <h2 class="blog__title page-title">Blog</h2>
+                    <a class="blog__subtitle-wrap" href="#">
+                        <p class="blog__view-all accent-text">View all</p>
+                        <div class="arrow-icon arrow-icon--accent"></div>
+                    </a>
+                </div>
+                <div class="blog-wrap">
+                    <article class="archive-article">
+                        <a class="archive-article__image-link" href="#">
+                            <div class="archive-article__image" style="background-image: url(img/blog-image1.jpg);"></div>
+                        </a>
+                        <div class="archive-article__date">22.03.2022</div>
+                        <h3 class="archive-article__title">
+                            <a class="archive-article__title-link" href="#">Best of the new cryptocurrencies<br> to consider buying in 2022</a>
+                        </h3>
+                        <ul class="archive-article__tags">
+                            <li class="archive-article__tag">
+                                <span>Topic 1</span>
+                            </li>
+                            <li class="archive-article__tag">
+                                <span>Topic 2</span>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="archive-article">
+                        <a class="archive-article__image-link" href="#">
+                            <div class="archive-article__image" style="background-image: url(img/blog-image2.jpg);"></div>
+                        </a>
+                        <div class="archive-article__date">22.03.2022</div>
+                        <h3 class="archive-article__title">
+                            <a class="archive-article__title-link" href="#">Best of the new cryptocurrencies to consider buying in 2022</a>
+                        </h3>
+                        <ul class="archive-article__tags">
+                            <li class="archive-article__tag">
+                                <span>Topic 1</span>
+                            </li>
+                            <li class="archive-article__tag">
+                                <span>Topic 2</span>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="archive-article">
+                        <a class="archive-article__image-link" href="#">
+                            <div class="archive-article__image" style="background-image: url(img/blog-image3.jpg);"></div>
+                        </a>
+                        <div class="archive-article__date">22.03.2022</div>
+                        <h3 class="archive-article__title">
+                            <a class="archive-article__title-link" href="#">Best of the new cryptocurrencies to consider buying in 2022</a>
+                        </h3>
+                        <ul class="archive-article__tags">
+                            <li class="archive-article__tag">
+                                <span>Topic 1</span>
+                            </li>
+                            <li class="archive-article__tag">
+                                <span>Topic 2</span>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="get-dbx">
+            <div class="container">
+                <h2 class="get-dbx__title page-title">Get DBX</h2>
+                <div class="get-dbx__content">
+
+                    <div class="get-dbx__item get-dbx__item--bitforex">
+                        <div class="get-dbx__item-inner">
+                            <div class="get-dbx__img-wrap"></div>
+                            <h3 class="get-dbx__item-title">Bitforex</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="get-dbx__item get-dbx__item--bitmart">
+                        <div class="get-dbx__item-inner">
+                            <div class="get-dbx__img-wrap"></div>
+                            <h3 class="get-dbx__item-title">Bitmart</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="get-dbx__item get-dbx__item--lbank">
+                        <div class="get-dbx__item-inner">
+                            <div class="get-dbx__img-wrap"></div>
+                            <h3 class="get-dbx__item-title">Lbank</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="get-dbx__item get-dbx__item--latoken">
+                        <div class="get-dbx__item-inner">
+                            <div class="get-dbx__img-wrap"></div>
+                            <h3 class="get-dbx__item-title">Latoken</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="get-dbx__item get-dbx__item--probit">
+                        <div class="get-dbx__item-inner">
+                            <div class="get-dbx__img-wrap"></div>
+                            <h3 class="get-dbx__item-title">Probit</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="get-dbx__item get-dbx__item--whitebit">
+                        <div class="get-dbx__item-inner">
+                            <div class="get-dbx__img-wrap"></div>
+                            <h3 class="get-dbx__item-title">Whitebit</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="get-dbx__item get-dbx__item--pancakeswap">
+                        <div class="get-dbx__item-inner">
+                            <div class="get-dbx__img-wrap"></div>
+                            <h3 class="get-dbx__item-title">Pancakeswap</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="get-dbx__item get-dbx__item--coinsbit">
+                        <div class="get-dbx__item-inner">
+                            <div class="get-dbx__img-wrap"></div>
+                            <h3 class="get-dbx__item-title">Coinsbit</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="get-dbx__item get-dbx__item--uniswap">
+                        <div class="get-dbx__item-inner">
+                            <div class="get-dbx__img-wrap"></div>
+                            <h3 class="get-dbx__item-title">Uniswap</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="faqs">
+            <div class="container">
+                <div class="faqs__inner">
+                    <h2 class="faqs__title page-title">FAQs</h2>
+                    <a class="faqs__subtitle-wrap" href="#">
+                        <p class="faqs__view-all accent-text">View all</p>
+                        <div class="arrow-icon arrow-icon--accent"></div>
+                    </a>
+                </div>
+                <div class="faqs__content-wrap">
+                    <div class="faqs__decotate">
+                        <div class="faqs__square faqs__square--1"></div>
+                        <div class="faqs__square faqs__square--2"></div>
+                        <div class="faqs__square faqs__square--3"></div>
+                    </div>
+                    <div class="faqs__content-inner">
+                        <div class="faqs__content">
+                            <div class="faqs__content-item">
+                                <div class="faqs__content-title">Here’s a debit card that combines the power of blockchain technology and the functionality of traditional banking.</div>
+                                <div class="faqs__content-answer">The conversion is done automatically and in real-time according to the current dollar exchange rate. DBX is also planning on developing a network of ATMs in the EU and North America.</div>
+                            </div>
+                            <div class="faqs__content-item">
+                                <div class="faqs__content-title">Here’s a debit card that combines the power of blockchain</div>
+                                <div class="faqs__content-answer">can perform transactions that are transparent, secure, and independent of restrictions imposed on the bank</div>
+                            </div>
+                            <div class="faqs__content-item">
+                                <div class="faqs__content-title">Here’s a debit card that </div>
+                                <div class="faqs__content-answer">With the Bang card, you can perform transactions that are transparent, secure, and independent of restrictions imposed on the banking systems in different countries.
+                                    DBX together with VISA is giving all new open beta-testing users a gold debit card with awesome cash back privileges for two years.</div>
+                            </div>
+                            <div class="faqs__content-item">
+                                <div class="faqs__content-title">Here’s a debit card that combines the power of blockchain</div>
+                                <div class="faqs__content-answer">With the Bank card, you can make payments either online or in-person using crypto. The conversion is done automatically and in real-time according to the current dollar exchange rate. DBX is also planning on developing a network of ATMs in the EU and North America.
+                                    With the Bang card, you can perform transactions that are transparent, secure, and independent of restrictions imposed on the banking systems in different countries.
+                                    DBX together with VISA is giving all new open beta-testing users a gold debit card with awesome cash back privileges for two years.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners">
+            <div class="container">
+                <h2 class="partners__title block-title">Partners</h2>
+                <div class="partners__list-wrap">
+                    <ul class="partners__list">
+                        <li class="partners__item">
+                            <a class="partners__link" href="#">
+                                <img src="img/partners-visa.png" alt="Visa" class="partners__image">
+                            </a>
+                        </li>
+                        <li class="partners__item">
+                            <a class="partners__link" href="#">
+                                <img src="img/partners-accubits.jpg" alt="Visa" class="partners__image">
+                            </a>
+                        </li>
+                        <li class="partners__item">
+                            <a class="partners__link" href="#">
+                                <img src="img/partners-stripe.png" alt="Visa" class="partners__image">
+                            </a>
+                        </li>
+                        <li class="partners__item">
+                            <a class="partners__link" href="#">
+                                <img src="img/partners-chainalysis.svg" alt="Visa" class="partners__image">
+                            </a>
+                        </li>
+                        <li class="partners__item">
+                            <a class="partners__link" href="#">
+                                <img src="img/partners-tiptop.jpg" alt="Visa" class="partners__image">
+                            </a>
+                        </li>
+                        <li class="partners__item">
+                            <a class="partners__link" href="#">
+                                <img src="img/partners-cryptocompare.svg" alt="Visa" class="partners__image">
+                            </a>
+                        </li>
+                        <li class="partners__item">
+                            <a class="partners__link" href="#">
+                                <img src="img/partners-shuftipro.svg" alt="Visa" class="partners__image">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="community">
+            <div class="container">
+                <div class="community__wrap">
+                    <h2 class="community__title page-title">Join our community</h2>
+                    <ul class="community__list">
+                        <li class="community__item">
+                            <a class="community__link community__link--yt" href="#">
+                                <span>Youtube</span>
+                                <div class="arrow-icon__wrap">
+                                    <div class="arrow-icon arrow-icon--yt"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="community__item">
+                            <a class="community__link community__link--tw" href="#">
+                                <span>Twitter</span>
+                                <div class="arrow-icon__wrap">
+                                    <div class="arrow-icon arrow-icon--tw"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="community__item">
+                            <a class="community__link community__link--tg" href="#">
+                                <span>Telegram</span>
+                                <div class="arrow-icon__wrap">
+                                    <div class="arrow-icon arrow-icon--tg"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="community__item">
+                            <a class="community__link community__link--dc" href="#">
+                                <span>Discord</span>
+                                <div class="arrow-icon__wrap">
+                                    <div class="arrow-icon arrow-icon--dc"></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <a class="running-line" href="#">
+                <div class="running-line__inner">
+                    <div class="running-line__text-wrap">
+                        <div class="running-line__text">community</div>
+                        <div class="arrow-icon arrow-icon--rl"></div>
+                    </div>
+                    <div class="running-line__text-wrap">
+                        <div class="running-line__text">community</div>
+                        <div class="arrow-icon arrow-icon--rl"></div>
+                    </div>
+                    <div class="running-line__text-wrap">
+                        <div class="running-line__text">community</div>
+                        <div class="arrow-icon arrow-icon--rl"></div>
+                    </div>
+                    <div class="running-line__text-wrap">
+                        <div class="running-line__text">community</div>
+                        <div class="arrow-icon arrow-icon--rl"></div>
+                    </div>
+                    <div class="running-line__text-wrap">
+                        <div class="running-line__text">community</div>
+                        <div class="arrow-icon arrow-icon--rl"></div>
+                    </div>
+                    <div class="running-line__text-wrap">
+                        <div class="running-line__text">community</div>
+                        <div class="arrow-icon arrow-icon--rl"></div>
+                    </div>
+                </div>
+            </a>
+        </section>
     </main>
     @@include("html/chunk/footer.html")
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="../js/main.js" defer></script>
 </body>
 

@@ -1,0 +1,32 @@
+.running-line {
+    padding: 27px 0;
+    background-color: $accent;
+    display: flex;
+    position: relative;
+    height: 110px;
+    overflow: hidden;
+    // align-items: center;
+    &__text-wrap {
+        display: flex;
+        align-items: center;
+    }
+    & .nobr-wrap  {
+        display: flex;
+        align-items: center;
+    }
+    &__text {
+        margin-right: 40px;
+        color: #C1A9E0;
+        text-transform: uppercase;
+    }
+    &__text-wrap + &__text-wrap {
+        margin-left: 40px;
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+    & #undefined1 {
+        padding-left: 40px;
+    }
+}

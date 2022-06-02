@@ -50,3 +50,14 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.page-title {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 0;
+    @include adaptiv-font(62, 28);
+    & span {
+        color: $accent;
+    }
+}

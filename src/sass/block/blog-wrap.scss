@@ -1,0 +1,10 @@
+.blog-wrap {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 60px;
+    grid-template-columns: repeat(auto-fill, minmax(385px, 1fr));
+    margin-bottom: 60px;
+    @include md {
+        display: flex;
+    }
+}
