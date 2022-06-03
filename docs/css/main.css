@@ -407,6 +407,11 @@ body {
   height: 258px;
 }
 
+.svg-icon-dc-dims {
+  width: 24px;
+  height: 24px;
+}
+
 .svg-icon-fox-dims {
   width: 54px;
   height: 50px;
@@ -432,9 +437,24 @@ body {
   height: 87px;
 }
 
+.svg-icon-tg-dims {
+  width: 24px;
+  height: 24px;
+}
+
 .svg-icon-transaction-speed-dims {
   width: 31px;
   height: 73px;
+}
+
+.svg-icon-tw-dims {
+  width: 24px;
+  height: 24px;
+}
+
+.svg-icon-yt-dims {
+  width: 24px;
+  height: 24px;
 }
 
 .accent-text {
@@ -879,6 +899,7 @@ body {
 .community__title {
   width: 40%;
   margin-top: 20px;
+  text-transform: uppercase;
 }
 
 .community__list {
@@ -924,7 +945,10 @@ body {
   color: #E84142;
 }
 
-.community__link--tg,
+.community__link--tg {
+  color: #367DFF;
+}
+
 .community__link--tw {
   color: #367DFF;
 }
@@ -934,6 +958,10 @@ body {
 }
 
 .community__link:hover .arrow-icon {
+  width: 80px;
+}
+
+.community__item:hover .arrow-icon {
   width: 80px;
 }
 
@@ -1271,7 +1299,6 @@ body {
   -moz-column-gap: 20px;
   column-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(385px, 1fr));
-  grid-template-rows: repeat(160px);
 }
 
 .get-dbx__img-wrap {
@@ -2000,7 +2027,7 @@ body {
   height: 40px;
 }
 
-.social-links .social-links__link {
+.social-links__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2013,12 +2040,30 @@ body {
   width: 40px;
   height: 40px;
   border: 1px solid #ffffff;
-  border-radius: 5px;
   margin-bottom: 0;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-.social-links .social-links__link picture {
+.social-links__link:hover {
+  background: #fff;
+  border-color: #fff;
+}
+
+.social-links__link picture {
   line-height: 0;
+}
+
+.social-links__link svg {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  fill: #fff;
+}
+
+.social-links__link:hover svg {
+  fill: #7A18D5;
 }
 
 @supports (-webkit-appearance:none) {
@@ -2270,10 +2315,15 @@ body {
 
   .problem-solve__title {
     max-width: 100%;
+    margin-bottom: 20px;
   }
 
   .problem-solve__subtitle-wrap svg {
     width: 34px;
+  }
+
+  .problem-solve__subtitle-wrap {
+    margin-bottom: 30px;
   }
 
   .problem-solve__content-wrap {
@@ -2339,11 +2389,11 @@ body {
   }
 
   .blog {
-    padding: 80px 0 80px;
+    padding: 80px 0 50px;
   }
 
   .blog__inner {
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
 
   .blog__view-all {
@@ -2360,10 +2410,12 @@ body {
 
   .community__wrap {
     display: block;
+    padding-bottom: 10px;
   }
 
   .community__title {
     width: 100%;
+    margin-bottom: 30px;
   }
 
   .community__list {
@@ -2378,6 +2430,39 @@ body {
 
   .community__link {
     height: 78px;
+  }
+
+  .community__item--yt {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .community__item--tg {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .community__item--tw {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+
+  .community__item--dc {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  .community__item:nth-child(3),
+  .community__item:nth-child(4) {
+    border-bottom: 1px solid #DDDDDD;
+  }
+
+  .community__item:nth-child(2) {
+    border-bottom: none;
   }
 
   .comparing-table--mobile .comparing-table {
@@ -2472,6 +2557,10 @@ body {
     display: none;
   }
 
+  .comparing__title {
+    margin-bottom: 40px;
+  }
+
   .ecosystem {
     padding-top: 40px;
     padding-bottom: 100px;
@@ -2553,12 +2642,16 @@ body {
     padding: 80px 0;
   }
 
+  .get-dbx__content {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
   .get-dbx__item {
-    padding: 15px 30px;
+    padding: 15px 5px 15px 20px;
   }
 
   .header {
-    padding: 30px 25px 25px;
+    padding: 30px 0 25px;
   }
 
   .nav-header-burger {
@@ -2685,7 +2778,11 @@ body {
   }
 
   .partners {
-    padding-bottom: 200px;
+    padding-bottom: 150px;
+  }
+
+  .partners__list {
+    top: 75px;
   }
 
   .partners__item + .partners__item {

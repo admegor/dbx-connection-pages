@@ -2,7 +2,7 @@
     padding-bottom: 430px;
     position: relative;
     @include md {
-        padding-bottom: 200px;
+        padding-bottom: 150px;
     }
     &__title {
         margin: 0;
@@ -15,6 +15,9 @@
         position: absolute;
         left: 0;
         top: 150px;
+        @include md {
+            top: 75px;
+        }
         overflow-x: scroll;
         overflow-y: hidden;
         overflow: -moz-scrollbars-none;

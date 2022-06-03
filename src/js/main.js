@@ -10,6 +10,7 @@ $(document).ready(function(){
     const sliderProblemSolve = require("./module/problem-solve.js");
     const sliderBlog = require("./module/slider-blog.js");
     const faqAccordion = require("./module/faq-accordion.js");
-    const partners = require("./module/partners.js");
     const runningLine = require("./module/running-line.js");
+    const partnersItems = require("./module/partners-items.js");
+    const partners = require("./module/partners.js");
 })
