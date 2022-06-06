@@ -40,6 +40,16 @@ $maxWidth: 1550;
         @content;
     }
 }
+@mixin xxl {
+    @media (max-width: 1600px) {
+        @content;
+    }
+}
+@mixin xl {
+    @media (max-width: 1300px) {
+        @content;
+    }
+}
 
 @mixin list-reset {
     list-style: none;

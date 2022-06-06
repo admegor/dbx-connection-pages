@@ -1,6 +1,9 @@
 .faqs {
     min-height: 750px;
     margin-bottom: 100px;
+    @include lg {
+        min-height: auto;
+    }
     @include md {
         margin-bottom: 80px;
         min-height: initial;

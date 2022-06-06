@@ -49,6 +49,15 @@ body {
     max-width: 1550px;
     margin: 0 auto;
     padding: 0 15px;
+    @include xxl {
+        max-width: 1300px;
+    }
+    @include xl {
+        max-width: 1000px;
+    }
+    @include lg {
+        max-width: 768px;
+    }
 }
 
 .page-title {
