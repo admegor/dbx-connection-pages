@@ -1,12 +1,16 @@
 .nav-header {
     width: 100%;
+    max-width: 620px;
     &__list {
         @include list-reset;
         display: flex;
         & li + li {
             margin-left: auto;
-            @include lg {
+            @include xl {
                 margin-left: 50px;
+            }
+            @include lg {
+                margin-left: 30px;
             }
         }
         & li a {
@@ -90,6 +94,7 @@
         }
     }
     @include lg {
+        max-width: initial;
         display: none;
         &.open {
             display: block;

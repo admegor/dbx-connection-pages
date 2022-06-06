@@ -1591,6 +1591,7 @@ body {
 
 .nav-header {
   width: 100%;
+  max-width: 620px;
 }
 
 .nav-header__list {
@@ -2229,6 +2230,10 @@ body {
     max-width: 1000px;
   }
 
+  .nav-header__list li + li {
+    margin-left: 50px;
+  }
+
 @supports (-webkit-appearance:none) {
 
 }
@@ -2329,7 +2334,7 @@ body {
   }
 
   .nav-header__list li + li {
-    margin-left: 50px;
+    margin-left: 30px;
   }
 
   .nav-header__submenu-list li + li {
@@ -2344,6 +2349,7 @@ body {
   }
 
   .nav-header {
+    max-width: initial;
     display: none;
   }
 
