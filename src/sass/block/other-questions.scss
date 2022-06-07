@@ -1,0 +1,27 @@
+.other-questions {
+    color: #fff;
+    background-color: $accent;
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__subtitle {
+        max-width: 650px;
+        margin: 0;
+        margin-bottom: 24px;
+        @include md {
+            max-width: 100%;
+        }
+    }
+    &__container {
+        padding: 115px 0 140px;
+        position: relative;
+    }
+    &__decor {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 349px;
+        height: 307px;
+        background: url("../../img/bg-other-question.svg") no-repeat ;
+    }
+}

@@ -72,3 +72,38 @@
         }
     }
 }
+
+.faqs-page .promo {
+    &__image-wrap {
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+        @include md {
+            order: 1;
+            // margin: 0 auto 45px;
+        }
+    }
+    &__content {
+        margin-right: 0;
+    }
+    &__content {
+        width: 50%;
+        margin-top: 0;
+        @include md {
+            width: 100%;
+        }
+    }
+    &__wrap {
+        align-items: center;
+        @include md {
+            align-items: initial;
+        }
+    }
+    &__image-inner {
+        max-width: initial;
+    }
+    @include xl {
+        height: auto;
+        padding: 5% 0 15%;
+    }
+}

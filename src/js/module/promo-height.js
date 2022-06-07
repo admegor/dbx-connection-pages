@@ -5,7 +5,7 @@ function promoHeight() {
 
     let mainSectionHeight = heightWindow - headerHight;
 
-    if( window.innerWidth >= 769 ){
+    if( window.innerWidth >= 1080 ){
         mainSection.style.height = mainSectionHeight + "px";
     } else {
         mainSection.style.height = 'initial';
@@ -13,6 +13,6 @@ function promoHeight() {
 }
 window.addEventListener('resize', promoHeight);
 
-if( window.innerWidth >= 769 ){
+if( window.innerWidth >= 1080 ){
     promoHeight();
 }

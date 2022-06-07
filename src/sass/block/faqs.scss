@@ -12,6 +12,7 @@
         margin-bottom: 40px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         @include md {
             margin-bottom: 40px;
         }
@@ -77,6 +78,9 @@
         font-weight: 400;
         @include adaptiv-font(20, 18);
         display: none;
+        @include md {
+            padding: 0 30px 20px;
+        }
     }
     &__content-inner {
         max-width: 1000px;
