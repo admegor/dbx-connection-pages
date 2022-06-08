@@ -8,12 +8,13 @@
         max-width: 650px;
         margin: 0;
         margin-bottom: 24px;
+        @include adaptiv-font(22, 16);
         @include md {
             max-width: 100%;
         }
     }
     &__container {
-        padding: 115px 0 140px;
+        padding: 115px 15px 140px;
         position: relative;
     }
     &__decor {
@@ -23,5 +24,10 @@
         width: 349px;
         height: 307px;
         background: url("../../img/bg-other-question.svg") no-repeat ;
+        z-index: 1;
+        pointer-events: none;
+    }
+    &__form {
+        z-index: 2;
     }
 }

@@ -34,16 +34,12 @@
         </section>
 
         <section class="faqs">
-            <div class="container">
+            <div class="container faqs__container">
                 <div class="faqs__inner">
                     <h2 class="faqs__title page-title">FAQs</h2>
-                    <a class="faqs__subtitle-wrap" href="#">
-                        <p class="faqs__view-all accent-text">View all</p>
-                        <div class="arrow-icon arrow-icon--accent"></div>
-                    </a>
                 </div>
                 <div class="faqs__content-wrap">
-                    <div class="faqs__decotate">
+                    <div class="faqs__decorate">
                         <div class="faqs__square faqs__square--1"></div>
                         <div class="faqs__square faqs__square--2"></div>
                         <div class="faqs__square faqs__square--3"></div>
@@ -90,8 +86,18 @@
                             <input class="form-footer__input" type="text" id="email">
                         </div>
                     </div>
-                    <div class="form-footer__block-wrap"></div>
-                    <div class="form-footer__block-wrap"></div>
+                    <div class="form-footer__block-wrap">
+                        <div class="form-footer__input-wrap">
+                            <label class="form-footer__label" for="question">Question</label>
+                            <textarea class="form-footer__input form-footer__textarea" name="question" id="question" cols="30" rows="10"></textarea>
+                        </div>
+
+                    </div>
+                    <div class="form-footer__block-wrap">
+                        <div class="form-footer__input-wrap">
+                            <input class="form-footer__submit button-accent button-accent--footer" type="submit" value="Send">
+                        </div>
+                    </div>
                 </form>
                 <div class="other-questions__decor"></div>
             </div>

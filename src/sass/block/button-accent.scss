@@ -17,4 +17,10 @@
     &--header {
         padding: 0.38em 2em;
     }
+    &--footer {
+        background-color: #fff;
+        color: $accent;
+        cursor: pointer;
+        padding: 0.7em 2.4em;
+    }
 }

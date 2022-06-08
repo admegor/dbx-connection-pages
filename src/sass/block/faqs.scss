@@ -1,12 +1,18 @@
 .faqs {
     min-height: 750px;
     margin-bottom: 100px;
-    @include lg {
+    padding-top: 50px;
+    @include xl {
         min-height: auto;
+        padding-top: 10px;
     }
     @include md {
+        padding-top: 0;
         margin-bottom: 80px;
         min-height: initial;
+    }
+    &__container {
+        position: relative;
     }
     &__inner {
         margin-bottom: 40px;
@@ -90,9 +96,9 @@
     &__content-wrap {
         position: relative;
     }
-    &__decotate {
+    &__decorate {
         position: absolute;
-        @include lg {
+        @include xl {
             display: none;
         }
     }
@@ -117,5 +123,19 @@
             left: 281px;
             z-index: -3;
         }
+    }
+}
+
+.faqs-page .faqs {
+    &__inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include xl {
+            position: initial;
+        }
+    }
+    &__decorate {
+        top: 115px;
     }
 }
