@@ -12,5 +12,4 @@ $(document).ready(function(){
     const faqAccordion = require("./module/faq-accordion.js");
     const runningLine = require("./module/running-line.js");
     const partnersItems = require("./module/partners-items.js");
-    const partners = require("./module/partners.js");
 })

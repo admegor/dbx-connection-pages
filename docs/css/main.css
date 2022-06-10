@@ -1878,16 +1878,16 @@ body {
   position: absolute;
   left: 0;
   top: 150px;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  overflow: -moz-scrollbars-none;
+  -webkit-animation: scroll 20s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
-.partners__list::-webkit-scrollbar {
-  width: 0;
+.partners__list:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
 }
 
-.partners__item + .partners__item {
+.partners__item {
   margin-left: 90px;
 }
 
@@ -1904,6 +1904,64 @@ body {
   min-width: -moz-fit-content;
   min-width: fit-content;
   width: 40%;
+}
+
+.partners .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 0;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-2542px);
+    transform: translateX(-2542px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-2542px);
+    transform: translateX(-2542px);
+  }
+}
+
+@-webkit-keyframes scroll-mobile {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-1383px);
+    transform: translateX(-1383px);
+  }
+}
+
+@keyframes scroll-mobile {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-1383px);
+    transform: translateX(-1383px);
+  }
 }
 
 .problem-solve-content {
@@ -2651,10 +2709,6 @@ body {
     padding-bottom: 20px;
   }
 
-  .partners__item + .partners__item {
-    margin-left: 50px;
-  }
-
   .problem-solve-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3075,7 +3129,12 @@ body {
     top: 75px;
   }
 
-  .partners__item + .partners__item {
+  .partners__list {
+    -webkit-animation: scroll-mobile 20s linear infinite;
+    animation: scroll-mobile 20s linear infinite;
+  }
+
+  .partners__item {
     margin-left: 30px;
   }
 

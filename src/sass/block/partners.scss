@@ -18,18 +18,16 @@
         @include md {
             top: 75px;
         }
-        overflow-x: scroll;
-        overflow-y: hidden;
-        overflow: -moz-scrollbars-none;
-        &::-webkit-scrollbar { 
-            width: 0; 
+        animation: scroll 20s linear infinite;
+        @include md {
+            animation: scroll-mobile 20s linear infinite;
+        }
+        &:hover {
+            animation-play-state: paused;
         }
     }
-    &__item + &__item {
+    &__item {
         margin-left: 90px;
-        @include lg {
-            margin-left: 50px;
-        }
         @include md {
             margin-left: 30px;
         }
@@ -42,5 +40,26 @@
         display: block;
         min-width: fit-content;
         width: 40%;
+    }
+    & .slick-track {
+        display: flex;
+        align-items: center;
+        min-width: 0;
+    }
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-2542px);
+    }
+}
+@keyframes scroll-mobile {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1383px);
     }
 }
