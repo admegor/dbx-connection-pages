@@ -1,6 +1,7 @@
 .partners {
     padding-bottom: 430px;
     position: relative;
+    overflow: hidden;
     @include md {
         padding-bottom: 150px;
     }

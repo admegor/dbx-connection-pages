@@ -40,6 +40,7 @@
         box-shadow: none;
         color: #fff;
         outline: solid transparent 1px;
+        width: 100%;
         &:focus-visible {
             border: none;
             border-color: #fff;
@@ -48,6 +49,9 @@
     }
     &__input-wrap {
         margin-bottom: 35px;
+        & br {
+            display: none;
+        }
     }
     &__textarea {
         resize: none;

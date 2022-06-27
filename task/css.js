@@ -26,17 +26,17 @@ const css = () => {
             message: error.message
         }))
     }))
-    .pipe(concat("main.css"))
+    .pipe(concat("build.css"))
     .pipe(cssimport())
     .pipe(webpCss())
     .pipe(autoprefixer())
     .pipe(shorthand())
     .pipe(groupCssMediaQueries())
-    .pipe(size({ title: "main.css" }))
+    .pipe(size({ title: "build.css" }))
     .pipe(dest(path.css.dest, { sourcemaps: true }))
     .pipe(rename({ suffix: ".min" }))
     .pipe(csso())
-    .pipe(size({ title: "main.min.css" }))
+    .pipe(size({ title: "build.min.css" }))
     .pipe(dest(path.css.dest, { sourcemaps: true }));
 }
 

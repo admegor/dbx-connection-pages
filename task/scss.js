@@ -19,7 +19,7 @@ const webpCss = require("gulp-webp-css");
 
 // SCSS handler
 const scss = () => {
-    return src(path.scss.src, { sourcemaps: true })
+    return src(path.scss.src, { sourcemaps: false })
     .pipe(plumber({
         errorHandler: notify.onError(error => ({
             ttitle: "SCSS",
@@ -32,11 +32,11 @@ const scss = () => {
     .pipe(autoprefixer())
     .pipe(shorthand())
     .pipe(groupCssMediaQueries())
-    .pipe(size({ title: "main.css" }))
+    .pipe(size({ title: "build.css" }))
     .pipe(dest(path.scss.dest))
     .pipe(rename({ suffix: ".min" }))
     .pipe(csso())
-    .pipe(size({ title: "main.min.css" }))
+    .pipe(size({ title: "build.min.css" }))
     .pipe(dest(path.scss.dest));
 }
 

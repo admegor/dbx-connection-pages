@@ -15,7 +15,9 @@
         z-index: 1;
         cursor: pointer;
         & svg {
+            display: block;
             margin-bottom: 20px;
+            margin-left: auto;
         }
         &--transaction-speed {
             grid-area: block1;

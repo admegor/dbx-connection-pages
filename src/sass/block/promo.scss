@@ -15,8 +15,10 @@
         }
     }
     &__content {
-        margin-top: 10%;
-        margin-right: 8%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
         width: 56%;
         @include md {
             order: 2;
@@ -45,12 +47,17 @@
         font-size: 22px;
     }
     &__image-wrap {
-        margin-right: 5%;
+        margin: 3% 5% 3% 0;
         @include md {
             order: 1;
-            margin-right: 0;
             margin: 0 auto 45px;
         }
+    }
+    &__image-inner {
+        height: 100%;
+    }
+    &__image {
+        height: 100%;
     }
     @include md {
         &__image {

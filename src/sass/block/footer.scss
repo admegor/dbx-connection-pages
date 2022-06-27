@@ -59,8 +59,9 @@
     &__email-wrap &__email {
         color: #fff;
     }
-    &__copyright {
+    &__copyright p {
         color: #adadad;
+        font-size: 15px;
     }
     @include md {
         &__content {
@@ -77,7 +78,6 @@
         &__policy {
             order: 2;
             width: 100%;
-            margin-bottom: 35px;
         }
         &__block-info {
             order: 1;

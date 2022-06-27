@@ -1,8 +1,8 @@
+const burgerBtn = document.querySelector(".nav-header-burger");
+const navHeader = document.querySelector(".nav-header");
+const submenuLists = document.querySelectorAll(".has-submenu");
+
 function menu() {
-    const burgerBtn = document.querySelector(".nav-header-burger");
-    const navHeader = document.querySelector(".nav-header");
-    const submenuLists = document.querySelectorAll(".has-submenu");
-    
 
     burgerBtn.addEventListener('click', (el) => {
         el.preventDefault();
@@ -10,7 +10,7 @@ function menu() {
         if (burgerBtn.classList.contains('active')) {
             navHeader.classList.add('open');
         } else {
-            navHeader.classList.remove('open');            
+            navHeader.classList.remove('open');
         }
     }) 
     
