@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ask a question</title>
-    <link rel="stylesheet" href="css/choices.min.css">
-    <link rel="stylesheet" href="css/build.min.css">
+    <link rel="stylesheet" href="css/build.css">
 </head>
 
 <body>
@@ -15,69 +14,106 @@
     @@include("html/chunk/header.html")
     <main class="main capital-page">
         <section class="capital">
-            <h1>DISTIBUTION OF CAPITAL</h1>
             <div class="container">
+                <h1 class="page-title">Distribution of capital</h1>
                 <div class="capital__wrap">
                     <ul class="capital__list">
-                        <li class="capital__item">
-                            <div id="graphLink1" class="capital__link" href="#"><span>Operating expenses</span></div>
+                        <li class="capital__item capital__item--1">
+                            <div id="graphLink1" class="capital__link" href="#">
+                                <span class="capital__link-value">7%</span>
+                                <span>Operating expenses</span>
+                            </div>
                         </li>
-                        <li class="capital__item">
-                            <div id="graphLink2" class="capital__link" href="#"><span>Marketing</span></div>
+                        <li class="capital__item capital__item--2">
+                            <div id="graphLink2" class="capital__link" href="#">
+                                <span class="capital__link-value">8%</span>
+                                <span>Marketing</span>
+                            </div>
                         </li>
-                        <li class="capital__item">
-                            <div id="graphLink3" class="capital__link" href="#"><span>Reserve</span></div>
+                        <li class="capital__item capital__item--3">
+                            <div id="graphLink3" class="capital__link" href="#">
+                                <span class="capital__link-value">12%</span>
+                                <span>Reserve</span>
+                            </div>
                         </li>
-                        <li class="capital__item">
-                            <div id="graphLink4" class="capital__link" href="#"><span>Loss Compensations</span></div>
+                        <li class="capital__item capital__item--4">
+                            <div id="graphLink4" class="capital__link" href="#">
+                                <span class="capital__link-value">5%</span>
+                                <span>Loss Compensations</span>
+                            </div>
                         </li>
-                        <li class="capital__item">
-                            <div id="graphLink5" class="capital__link" href="#"><span>Venture projects</span></div>
+                        <li class="capital__item capital__item--5">
+                            <div id="graphLink5" class="capital__link" href="#">
+                                <span class="capital__link-value">23%</span>
+                                <span>Venture projects</span>
+                            </div>
                         </li>
-                        <li class="capital__item">
-                            <div id="graphLink6" class="capital__link" href="#"><span>Hedge Operations</span></div>
+                        <li class="capital__item capital__item--6">
+                            <div id="graphLink6" class="capital__link" href="#">
+                                <span class="capital__link-value">3%</span>
+                                <span>Hedge Operations</span>
+                            </div>
                         </li>
-                        <li class="capital__item">
-                            <div id="graphLink7" class="capital__link" href="#"><span>Ecosystem Development</span></div>
+                        <li class="capital__item capital__item--7">
+                            <div id="graphLink7" class="capital__link" href="#">
+                                <span class="capital__link-value">10%</span>
+                                <span>Ecosystem Development</span>
+                            </div>
                         </li>
-                        <li class="capital__item">
-                            <div id="graphLink8" class="capital__link" href="#"><span>Investments</span></div>
+                        <li class="capital__item capital__item--8">
+                            <div id="graphLink8" class="capital__link" href="#">
+                                <span class="capital__link-value">12%</span>
+                                <span>Investments</span>
+                            </div>
                         </li>
-                        <li class="capital__item">
-                            <div id="graphLink9" class="capital__link" href="#"><span>Accumulation</span></div>
+                        <li class="capital__item capital__item--9">
+                            <div id="graphLink9" class="capital__link" href="#">
+                                <span class="capital__link-value">7%</span>
+                                <span>Accumulation</span>
+                            </div>
                         </li>
-                        <li class="capital__item">
-                            <div id="graphLink10" class="capital__link" href="#"><span>Liquidity</span></div>
+                        <li class="capital__item capital__item--10">
+                            <div id="graphLink10" class="capital__link" href="#">
+                                <span class="capital__link-value">6%</span>
+                                <span>Liquidity</span>
+                            </div>
                         </li>
-                        <li class="capital__item">
-                            <div id="graphLink11" class="capital__link" href="#"><span>Strengthening fund</span></div>
+                        <li class="capital__item capital__item--11">
+                            <div id="graphLink11" class="capital__link" href="#">
+                                <span class="capital__link-value">6%</span>
+                                <span>Strengthening fund</span>
+                            </div>
                         </li>
                     </ul>
-                    <div class="capital__graph">
-                        <svg width="630" height="630" viewBox="0 0 630 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path class="graphLink1" d="M315.5 18C359.145 18 402.252 27.6356 441.744 46.2188L386.219 164.214C364.097 153.805 339.949 148.407 315.5 148.407L315.5 18Z" fill="#FFAD28"/>
-                            <path class="graphLink2" d="M441.785 46.2384C486.971 67.5098 526.052 99.8503 555.401 140.259L449.887 216.894C433.447 194.258 411.554 176.141 386.242 164.225L441.785 46.2384Z" fill="#F55151"/>
-                            <path class="graphLink3" d="M555.314 140.14C599.662 201.136 619.101 276.739 609.675 351.561L480.291 335.261C485.571 293.347 474.682 250.996 449.839 216.827L555.314 140.14Z" fill="#151515"/>
-                            <path class="graphLink4" d="M609.744 351.007C605.851 382.383 596.965 412.934 583.422 441.503L465.585 385.645C473.171 369.641 478.149 352.526 480.329 334.95L609.744 351.007Z" fill="#7E44FE"/>
-                            <path class="graphLink5" d="M583.785 440.736C553.045 506.066 499.523 557.935 433.262 586.611C367 615.287 292.552 618.8 223.884 596.491L264.179 472.465C302.645 484.963 344.349 482.995 381.468 466.931C418.586 450.867 448.568 421.811 465.787 385.215L583.785 440.736Z" fill="#FA44FE"/>
-                            <path class="graphLink6" d="M223.866 596.485C206.135 590.723 188.987 583.302 172.65 574.319L235.478 460.045C244.63 465.077 254.236 469.234 264.168 472.462L223.866 596.485Z" fill="#2F7617"/>
-                            <path class="graphLink7" d="M172.665 574.327C117.794 544.164 73.882 497.403 47.221 440.748L165.216 385.222C180.151 416.959 204.749 443.153 235.487 460.05L172.665 574.327Z" fill="#287AFF"/>
-                            <path class="graphLink8" d="M47.2182 440.742C15.1089 372.506 10.2077 294.598 33.5121 222.875L157.536 263.174C144.482 303.351 147.227 346.994 165.214 385.218L47.2182 440.742Z" fill="#37C87B"/>
-                            <path class="graphLink9" d="M33.5056 222.895C46.99 181.385 69.4721 143.364 99.3472 111.546L194.416 200.81C177.68 218.633 165.086 239.932 157.533 263.185L33.5056 222.895Z" fill="#DB44FE"/>
-                            <path class="graphLink10" d="M99.3717 111.52C124.637 84.6186 154.702 62.6703 188.022 46.8031L244.09 164.542C225.424 173.43 208.582 185.725 194.429 200.795L99.3717 111.52Z" fill="#B97AD7"/>
-                            <path class="graphLink11" d="M188.114 46.7592C227.879 27.8398 271.359 18.0155 315.396 18L315.442 148.407C290.773 148.416 266.417 153.919 244.141 164.517L188.114 46.7592Z" fill="#4BBC24"/>
-                        </svg>
-                        <span class="graph__value graph__value1">7%</span>
-                        <span class="graph__value graph__value2">8%</span>
-                        <span class="graph__value graph__value3">12%</span>
-                        <span class="graph__value graph__value4">5%</span>
-                        <span class="graph__value graph__value5">23%</span>
-                        <span class="graph__value graph__value6">3%</span>
-                        <span class="graph__value graph__value7">10%</span>
-                        <span class="graph__value graph__value8">12%</span>
-                        <span class="graph__value graph__value9">7%</span>
-                        <span class="graph__value graph__value10">6%</span>
-                        <span class="graph__value graph__value11">7%</span>
+                    <div class="capital__graph-wrap">
+                        <div class="capital__graph">
+                            <svg width="630" height="630" viewBox="0 0 630 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="graphLink1" d="M315.5 18C359.145 18 402.252 27.6356 441.744 46.2188L386.219 164.214C364.097 153.805 339.949 148.407 315.5 148.407L315.5 18Z" fill="#FFAD28"/>
+                                <path class="graphLink2" d="M441.785 46.2384C486.971 67.5098 526.052 99.8503 555.401 140.259L449.887 216.894C433.447 194.258 411.554 176.141 386.242 164.225L441.785 46.2384Z" fill="#F55151"/>
+                                <path class="graphLink3" d="M555.314 140.14C599.662 201.136 619.101 276.739 609.675 351.561L480.291 335.261C485.571 293.347 474.682 250.996 449.839 216.827L555.314 140.14Z" fill="#151515"/>
+                                <path class="graphLink4" d="M609.744 351.007C605.851 382.383 596.965 412.934 583.422 441.503L465.585 385.645C473.171 369.641 478.149 352.526 480.329 334.95L609.744 351.007Z" fill="#7E44FE"/>
+                                <path class="graphLink5" d="M583.785 440.736C553.045 506.066 499.523 557.935 433.262 586.611C367 615.287 292.552 618.8 223.884 596.491L264.179 472.465C302.645 484.963 344.349 482.995 381.468 466.931C418.586 450.867 448.568 421.811 465.787 385.215L583.785 440.736Z" fill="#FA44FE"/>
+                                <path class="graphLink6" d="M223.866 596.485C206.135 590.723 188.987 583.302 172.65 574.319L235.478 460.045C244.63 465.077 254.236 469.234 264.168 472.462L223.866 596.485Z" fill="#2F7617"/>
+                                <path class="graphLink7" d="M172.665 574.327C117.794 544.164 73.882 497.403 47.221 440.748L165.216 385.222C180.151 416.959 204.749 443.153 235.487 460.05L172.665 574.327Z" fill="#287AFF"/>
+                                <path class="graphLink8" d="M47.2182 440.742C15.1089 372.506 10.2077 294.598 33.5121 222.875L157.536 263.174C144.482 303.351 147.227 346.994 165.214 385.218L47.2182 440.742Z" fill="#37C87B"/>
+                                <path class="graphLink9" d="M33.5056 222.895C46.99 181.385 69.4721 143.364 99.3472 111.546L194.416 200.81C177.68 218.633 165.086 239.932 157.533 263.185L33.5056 222.895Z" fill="#DB44FE"/>
+                                <path class="graphLink10" d="M99.3717 111.52C124.637 84.6186 154.702 62.6703 188.022 46.8031L244.09 164.542C225.424 173.43 208.582 185.725 194.429 200.795L99.3717 111.52Z" fill="#B97AD7"/>
+                                <path class="graphLink11" d="M188.114 46.7592C227.879 27.8398 271.359 18.0155 315.396 18L315.442 148.407C290.773 148.416 266.417 153.919 244.141 164.517L188.114 46.7592Z" fill="#4BBC24"/>
+                            </svg>
+                            <span class="graph__value graph__value1">7%</span>
+                            <span class="graph__value graph__value2">8%</span>
+                            <span class="graph__value graph__value3">12%</span>
+                            <span class="graph__value graph__value4">5%</span>
+                            <span class="graph__value graph__value5">23%</span>
+                            <span class="graph__value graph__value6">3%</span>
+                            <span class="graph__value graph__value7">10%</span>
+                            <span class="graph__value graph__value8">12%</span>
+                            <span class="graph__value graph__value9">7%</span>
+                            <span class="graph__value graph__value10">6%</span>
+                            <span class="graph__value graph__value11">7%</span>
+                            <img class="capital__graph-logo" src="img/dbx-logo.svg" alt="DBX logo">
+                        </div>
+                        <img class="capital__graph-image" src="img/capital-graph-image.svg" alt="Distribution of capital">
                     </div>
                 </div>
             </div>

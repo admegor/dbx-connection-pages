@@ -65,8 +65,13 @@ body {
     font-weight: 600;
     line-height: 1.1;
     margin: 0;
+    text-transform: uppercase;
+    margin-bottom: 80px;
     @include adaptiv-font(62, 28);
     & span {
         color: $accent;
+    }
+    @include md {
+        margin-bottom: 30px;
     }
 }

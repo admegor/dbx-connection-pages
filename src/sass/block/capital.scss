@@ -1,22 +1,145 @@
 .capital {
+    padding-bottom: 170px;
     &__wrap {
         display: flex;
     }
     &__list {
-        width: 60%;
-        background-color: darkkhaki;
-        height: 500px;
+        @include list-reset;
+        flex-grow: 1;
     }
     &__link {
         & span {
             pointer-events: none;
         }
     }
+    &__item div {
+        color: #ffffff;
+        font-weight: 600;
+        transition: all .2s ease-in;
+        position: relative;
+        display: flex;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: -22px;
+            top: calc(50% - 10px);
+            background: url("../../img/capital-arrow.svg") no-repeat center center;
+            transition: all .2s ease-in;
+        }
+        @include adaptiv-font(30, 20);
+    }
+    &__item {
+        & span {
+            padding: 1em 0;
+        }
+        &--1 {
+            width: 57%;
+        }
+        &--2 {
+            width: 62%;
+        }
+        &--3 {
+            width: 75%;
+        }
+        &--4 {
+            width: 51%;
+        }
+        &--5 {
+            width: 94%;
+        }
+        &--6 {
+            width: 46%;
+            & .capital__link-value {
+                background-color: #2F7617;
+            }
+            & .capital__link span:nth-child(2) {
+                color: #2f7617;
+                background-color: #ffffff;
+                height: 100%;
+                display: inline-block;
+                padding: 1em 0;
+            }
+        }
+        &--7 {
+            width: 67%;
+        }
+        &--8 {
+            width: 75%;
+        }
+        &--9 {
+            width: 57%;
+        }
+        &--10 {
+            width: 53%;
+        }
+        &--11 {
+            width: 57%;
+        }
+        &:hover div {
+            transform: translateX(50px);
+            @include xxl {
+                transform: translateX(30px)
+            }
+            &::after {
+                left: -3px;
+            }
+        }
+    }
+    &__link-value {
+        min-width: 123px;
+        text-align: center;
+        display: inline-block;
+        @include xxl {
+           min-width: 80px;
+        }
+    }
+    &__item + &__item {
+        margin-top: 14px;
+    }
     &__item #graphLink1 {
         background-color: #FFAD28;
     }
+    &__item #graphLink2 {
+        background-color: #F55151;
+    }
+    &__item #graphLink3 {
+        background-color: #151515;
+        color: #fff;
+    }
+    &__item #graphLink4 {
+        background-color: #7E44FE;
+    }
+    &__item #graphLink5 {
+        background-color: #FA44FE;
+    }
+    &__item #graphLink6 {
+        background-color: #ffffff;
+    }
+    &__item #graphLink7 {
+        background-color: #287AFF;
+    }
+    &__item #graphLink8 {
+        background-color: #37C87B;
+    }
+    &__item #graphLink9 {
+        background-color: #DB44FE;
+    }
+    &__item #graphLink10 {
+        background-color: #B97AD7;
+    }
+    &__item #graphLink11 {
+        background-color: #4BBC24;
+    }
+    &__graph-wrap {
+        margin-left: auto;
+        position: sticky;
+        top: 0;
+        height: fit-content;
+    }
     &__graph {
-        padding: 10px;
         position: relative;
         & path {
             transform-box: fill-box;
@@ -74,48 +197,108 @@
             pointer-events: none;
         }
         & .graph__value1 {
-            top: 77px;
-            left: 366px;
+            top: 73px;
+            left: 350px;
         }
         & .graph__value2 {
-            top: 126px;
-            left: 453px;
+            top: 120px;
+            left: 446px;
         }
         & .graph__value3 {
-            top: 250px;
+            top: 237px;
             left: 520px;
         }
         & .graph__value4 {
-            top: 368px;
+            top: 359px;
             left: 523px;
         }
         & .graph__value5 {
-            top: 502px;
-            left: 407px;
+            top: 501px;
+            left: 395px;
         }
         & .graph__value6 {
-            top: 524px;
-            left: 208px;
+            top: 509px;
+            left: 204px;
         }
         & .graph__value7 {
-            top: 466px;
-            left: 130px;
+            top: 460px;
+            left: 121px;
         }
         & .graph__value8 {
-            top: 316px;
-            left: 75px;
+            top: 311px;
+            left: 60px;
         }
         & .graph__value9 {
-            top: 184px;
-            left: 108px;
+            top: 176px;
+            left: 96px;
         }
         & .graph__value10 {
-            top: 115px;
-            left: 167px;
+            top: 106px;
+            left: 158px;
         }
         & .graph__value11 {
-            top: 76px;
-            left: 256px;
+            top: 71px;
+            left: 246px;
+        }
+    }
+    &__graph-logo {
+        position: absolute;
+        left: calc(50% - 90px);
+        top: calc(50% - 90px);
+    }
+    &__graph-image {
+        display: none;
+    }
+    @include xl {
+        &__item {
+            width: 100%;
+            &--6 {
+                & .capital__link span:nth-child(2) {
+                    color: #ffffff;
+                    background-color: #2F7617;
+                    height: 100%;
+                    display: inline-block;
+                    padding: 1em 0;
+                }
+            }
+            &  #graphLink6 {
+                background-color: #2F7617;
+            }
+        }
+    }
+    @include lg {
+        padding-bottom: 90px;
+        &__wrap {
+            flex-direction: column;
+        }
+        &__list {
+            order: 2;
+        }
+        &__item {
+            & div::after {
+                content: none;
+            }
+            &:hover div {
+                transform: none;
+                @include xxl {
+                    transform: none;
+                }
+                &::after {
+                    left: -3px;
+                }
+            }
+        }
+        &__graph-wrap {
+            order: 1;
+            position: initial;
+            margin: 0 auto;
+        }
+        &__graph-image {
+            display: initial;
+            margin-bottom: 50px;
+        }
+        &__graph {
+            display: none;
         }
     }
 }

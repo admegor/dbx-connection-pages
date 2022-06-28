@@ -17,4 +17,9 @@ if ( document.querySelector('.capital__list')) {
             });
         }
     })
+    capitalList.addEventListener('mouseout', () => {
+        childGraphs.forEach(element => {
+            element.classList.remove('graphLink-show');
+        });
+    })
 }
