@@ -1,0 +1,70 @@
+.advantages-block {
+    padding-bottom: 200px;
+    @include md {
+        padding-bottom: 80px;
+    }
+    &__title-block {
+        margin-bottom: 60px;
+        @include lg {
+            margin-bottom: 45px;
+        }
+        @include md {
+            margin-bottom: 35px;
+        }
+    }
+    &__wrap {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: minmax(178px, 1fr);
+        grid-gap: 20px;
+        @include xl {
+            display: block;
+            
+        }
+    }
+    &__item +  &__item {
+        @include xl {
+            margin-top: 20px;
+        }
+    }
+    &__item {
+        padding: 30px;
+        border: 1px solid rgba(24, 62, 213, 0.2);
+        display: flex;
+        & svg {
+            min-width: 80px;
+            height: 80px;
+            margin-right: 10px;
+            @include md {
+                min-width: 60px;
+                height: 60px;
+            }
+        }
+        &:nth-child(4) {
+            grid-row-start: 2;
+            grid-column: 1 / span 6;
+        }
+        &:nth-child(5) {
+            grid-row-start: 2;
+            grid-column: 7 / span 6;
+        }
+        &:nth-child(-1n + 3) {
+            grid-column: span 4;
+        }
+        @include xxl {
+            padding: 25px;
+        }
+        @include md {
+            padding: 15px;
+        }
+    }
+    &__title {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    &__text {
+        margin: 0;
+        @include adaptiv-font(18, 16);
+        font-weight: 400;
+    }
+}

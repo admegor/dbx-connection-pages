@@ -1,0 +1,36 @@
+.horizontal-scroll {
+    position: relative;
+    width: 100%;
+    transition: background 0.1s;
+    // height added by js
+  }
+  
+  .horizontal-scroll__sticky {
+    position: sticky;
+    top: 0;
+  }
+  
+  .horizontal-scroll__mask {
+    width: 100vw;
+    height: 100vh;
+    @include lg {
+        height: initial;
+        width: initial;
+    }
+  }
+  
+  .horizontal-scroll__content {
+    display: inline-flex;
+    align-items: center;
+    height: 100vh;
+    transition: transform 0.1s ease-out;
+    @include lg {
+        height: initial;
+        display: block;
+    }
+  }
+  
+  .horizontal-scroll__items {
+    display: flex;
+    padding: 4rem;
+  }

@@ -138,9 +138,22 @@
         position: sticky;
         top: 0;
         height: fit-content;
+        @include xxl {
+            width: 40%;
+            margin-left: 5%;
+        }
+        @include lg {
+            width: initial;
+        }
     }
     &__graph {
         position: relative;
+        & svg {
+            @include xxl {
+                width: 100%;
+                height: 100%;
+            }
+        }
         & path {
             transform-box: fill-box;
             transition: all .2s;
@@ -191,60 +204,74 @@
         }
         & .graph__value {
             position: absolute;
-            color: #fff;
+            color: #ffffff;
             @include adaptiv-font(30, 20);
             font-weight: 600;
             pointer-events: none;
         }
         & .graph__value1 {
-            top: 73px;
-            left: 350px;
+            top: 9%;
+            left: 53%;
         }
         & .graph__value2 {
-            top: 120px;
-            left: 446px;
+            top: 17%;
+            left: 68%;
         }
         & .graph__value3 {
-            top: 237px;
-            left: 520px;
+            top: 35%;
+            left: 81%;
         }
         & .graph__value4 {
-            top: 359px;
-            left: 523px;
+            top: 55%;
+            left: 81%;
         }
         & .graph__value5 {
-            top: 501px;
-            left: 395px;
+            top: 77%;
+            left: 60%;
         }
         & .graph__value6 {
-            top: 509px;
-            left: 204px;
+            top: 80%;
+            left: 32%;
         }
         & .graph__value7 {
-            top: 460px;
-            left: 121px;
+            top: 70%;
+            left: 17%;
         }
         & .graph__value8 {
-            top: 311px;
-            left: 60px;
+            top: 47%;
+            left: 8%;
         }
         & .graph__value9 {
-            top: 176px;
-            left: 96px;
+            top: 26%;
+            left: 14%;
         }
         & .graph__value10 {
-            top: 106px;
-            left: 158px;
+            top: 16%;
+            left: 23%;
         }
         & .graph__value11 {
-            top: 71px;
-            left: 246px;
+            top: 9%;
+            left: 38%;
         }
     }
     &__graph-logo {
         position: absolute;
         left: calc(50% - 90px);
         top: calc(50% - 90px);
+        width: 180px;
+        height: 180px;
+        @include xxl {
+            width: 150px;
+            height: 150px;
+            left: calc(50% - 75px);
+            top: calc(50% - 75px);
+        }
+        @include xl {
+            width: 120px;
+            height: 120px;
+            left: calc(50% - 60px);
+            top: calc(50% - 60px);
+        }
     }
     &__graph-image {
         display: none;

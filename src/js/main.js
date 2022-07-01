@@ -9,3 +9,4 @@ const faqAccordion = require("./module/faq-accordion.js");
 const runningLine = require("./module/running-line.js");
 const headerLang = require("./module/header-lang.js");
 const capitalGraph = require("./module/capital-graph.js");
+const roadmapScroll = require("./module/roadmap-scroll.js");

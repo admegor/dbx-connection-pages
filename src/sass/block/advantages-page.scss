@@ -1,0 +1,63 @@
+.advantages-page {
+    padding: 50px 0 200px;
+    @include lg {
+        padding: 30px 0 100px;
+    }
+    @include md {
+        padding: 30px 0 60px
+    }
+    &__title {
+        text-align: center;
+        @include lg {
+            text-align: left;
+        }
+    }
+    &__item {
+        background-color: #F8F8F8;
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 5em;
+        @include xl {
+            margin: 0 2em;
+            padding: 30px;
+        }
+        @include md {
+            margin: 0;
+            padding: 15px;
+        }
+    }
+    &__item + &__item {
+        margin-top: 20px;
+    }
+    &__title-block {
+        margin: 0;
+        margin-bottom: 20px;
+        @include adaptiv-font(36, 25);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__content {
+        margin: 0;
+        color: #3B2E56;
+        line-height: 1.5;
+        @include adaptiv-font(18, 15);
+        & ul,
+        & li {
+            @include adaptiv-font(18, 15);
+            line-height: 1.5;
+            color: #3B2E56;
+        }
+    }
+    &__wrap li {
+        @include adaptiv-font(18, 15);
+        line-height: 1.5;
+        color: #3B2E56;
+
+    }
+    &__wrap {
+        max-width: 68%;
+        margin-right: 2%;
+    }
+}
