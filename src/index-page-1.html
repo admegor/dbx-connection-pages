@@ -7,17 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Заголовок</title>
     <link rel="stylesheet" href="css/choices.min.css">
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/build.min.css">
 </head>
 
 <body>
-    <style type="text/css">
-        .svg-dc-dims { width: 25px; height: 19px; }
-        .svg-tg-dims { width: 22px; height: 21px; }
-        .svg-tw-dims { width: 23px; height: 20px; }
-        .svg-yt-dims { width: 23px; height: 17px; }
-    </style>
     
+    @@include("html/chunk/svg-sprite.html")
     @@include("html/chunk/header.html")
     <main class="main">
         <section class="ecosystem">
@@ -27,9 +22,9 @@
                     <div class="blocks__item-wrap blocks__item-wrap--red">
                         <a class="blocks__item" href="#">
                             <div class="blocks__item-inner">
-                                <div class="blocks__image-wrap">
-                                    <img class="blocks__image" src="img/ecosystem-computer.svg" alt="ecosystem-computer"/>
-                                </div>
+                                <svg viewBox="0 0 268 288" class="svg-ecosystem-develop-dims">
+                                    <use xlink:href="#ecosystem-develop"></use>
+                                </svg>
                                 <h2 class="blocks__title">Develop</h2>
                             </div>
                         </a>
@@ -37,9 +32,9 @@
                     <div class="blocks__item-wrap blocks__item-wrap--grey">
                         <a class="blocks__item" href="#">
                             <div class="blocks__item-inner">
-                                <div class="blocks__image-wrap">
-                                    <img class="blocks__image" src="img/ecosystem-phone.svg" alt="ecosystem-computer"/>
-                                </div>
+                                <svg viewBox="0 0 131 306" class="svg-ecosystem-mobile-app-dims">
+                                    <use xlink:href="#ecosystem-mobile-app"></use>
+                                </svg>
                                 <h2 class="blocks__title">Mobile App</h2>
                             </div>
                         </a>
@@ -47,9 +42,9 @@
                     <div class="blocks__item-wrap blocks__item-wrap--yellow">
                         <a class="blocks__item" href="#">
                             <div class="blocks__item-inner">
-                                <div class="blocks__image-wrap">
-                                    <img class="blocks__image" src="img/ecosystem-tokenisation.svg" alt="ecosystem-computer"/>
-                                </div>
+                                <svg viewBox="0 0 197 258" class="svg-ecosystem-tokenisation-dims">
+                                    <use xlink:href="#ecosystem-tokenisation"></use>
+                                </svg>
                                 <h2 class="blocks__title">Tokenisation</h2>
                             </div>
                         </a>
@@ -57,9 +52,9 @@
                     <div class="blocks__item-wrap blocks__item-wrap--black">
                         <a class="blocks__item" href="#">
                             <div class="blocks__item-inner">
-                                <div class="blocks__image-wrap">
-                                    <img class="blocks__image" src="img/ecosystem-bridge.svg" alt="ecosystem-computer"/>
-                                </div>
+                                <svg viewBox="0 0 177 306" class="svg-ecosystem-bridge-dims">
+                                    <use xlink:href="#ecosystem-bridge"></use>
+                                </svg>
                                 <h2 class="blocks__title">Bridge</h2>
                             </div>
                         </a>
@@ -67,9 +62,9 @@
                     <div class="blocks__item-wrap blocks__item-wrap--pink">
                         <a class="blocks__item" href="#">
                             <div class="blocks__item-inner">
-                                <div class="blocks__image-wrap">
-                                    <img class="blocks__image" src="img/ecosystem-explorer.svg" alt="ecosystem-computer"/>
-                                </div>
+                                <svg viewBox="0 0 172 306" class="svg-ecosystem-explorer-dims">
+                                    <use xlink:href="#ecosystem-explorer"></use>
+                                </svg>
                                 <h2 class="blocks__title">Block Explorer</h2>
                             </div>
                         </a>
@@ -77,9 +72,9 @@
                     <div class="blocks__item-wrap blocks__item-wrap--accent">
                         <a class="blocks__item" href="#">
                             <div class="blocks__item-inner">
-                                <div class="blocks__image-wrap">
-                                    <img class="blocks__image" src="img/ecosystem-computer2.svg" alt="ecosystem-computer"/>
-                                </div>
+                                <svg viewBox="0 0 230 306" class="svg-ecosystem-stable-tokens-dims">
+                                    <use xlink:href="#ecosystem-stable-tokens"></use>
+                                </svg>
                                 <h2 class="blocks__title">Stable tokens</h2>
                             </div>
                         </a>

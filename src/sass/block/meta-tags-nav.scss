@@ -1,0 +1,40 @@
+.meta-tags-nav {
+    margin-bottom: 50px;
+    &__list {
+        @include list-reset;
+        display: flex;
+        flex-wrap: wrap;
+        @include md {
+            overflow-x: auto;
+            flex-wrap: nowrap;
+        }
+    }
+    &__item:not(:first-child) {
+        margin-left: 15px;
+        @include md {
+            margin-left: 10px;
+        }
+    }
+    &__item {
+        margin-bottom: 15px;
+    }
+    &__link {
+        display: inline-block;
+        @include adaptiv-font(21, 18);
+        padding: 0.3em 0.8em;
+        text-decoration: none;
+        color: $accent-dark;
+        border: 1px solid $accent;
+        white-space: nowrap;
+        transition: all .2s ease-in;
+
+        &--active {
+            background-color: $accent;
+            color: #fff;
+        }
+        &:hover {
+            background-color: $accent-light;
+            color: $accent-dark;
+        }
+    }
+}

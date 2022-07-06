@@ -1,6 +1,6 @@
 let $sliderSolve = $('.problem-solve-content');
 
-if ($(window).width() < 992) {
+if ($(window).width() < 976) {
     $sliderSolve.not('.slick-initialized').slick({
         dots: false,
         infinite: false,
@@ -17,7 +17,7 @@ if ($(window).width() < 992) {
 
 $(window).on('load resize', function() {
 
-    if ($(window).width() < 992) {
+    if ($(window).width() < 976) {
         $sliderSolve.not('.slick-initialized').slick({
             dots: false,
             infinite: false,

@@ -404,6 +404,11 @@ body {
   height: 81px;
 }
 
+.svg-advantages-smart_security-dims {
+  width: 250px;
+  height: 250px;
+}
+
 .svg-ecosystem-bridge-dims {
   width: 177px;
   height: 306px;
@@ -482,6 +487,71 @@ body {
 .svg-icon-yt-dims {
   width: 24px;
   height: 24px;
+}
+
+.svg-product-atm-dims {
+  width: 250px;
+  height: 250px;
+}
+
+.svg-product-buy-sell-dims {
+  width: 250px;
+  height: 250px;
+}
+
+.svg-product-create-roken-dims {
+  width: 250px;
+  height: 250px;
+}
+
+.svg-product-crypto-banking-dims {
+  width: 250px;
+  height: 250px;
+}
+
+.svg-product-dbx-smart-dims {
+  width: 250px;
+  height: 250px;
+}
+
+.svg-product-investment-dims {
+  width: 250px;
+  height: 251px;
+}
+
+.svg-product-market-dims {
+  width: 250px;
+  height: 250px;
+}
+
+.svg-product-payment-dims {
+  width: 250px;
+  height: 250px;
+}
+
+.svg-product-security-dims {
+  width: 250px;
+  height: 250px;
+}
+
+.svg-product-stablecoin-dims {
+  width: 250px;
+  height: 250px;
+}
+
+.svg-product-swap-dims {
+  width: 250px;
+  height: 250px;
+}
+
+.svg-product-swaport-dims {
+  width: 250px;
+  height: 251px;
+}
+
+.svg-product-venture-dims {
+  width: 250px;
+  height: 250px;
 }
 
 .accent-text {
@@ -565,6 +635,10 @@ body {
   margin: 0 5em;
 }
 
+.advantages-page__item--accent {
+  background: #FFDCDC;
+}
+
 .advantages-page__item + .advantages-page__item {
   margin-top: 20px;
 }
@@ -606,15 +680,27 @@ body {
   position: relative;
 }
 
+.archive-article:hover .archive-article__image {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 .archive-article__image-link {
   position: relative;
   margin-bottom: 14px;
   display: block;
+  overflow: hidden;
 }
 
 .archive-article__image {
-  background: url("../../img/article-1.jpg") no-repeat center/cover;
+  background: url("../img/article-1.jpg") no-repeat center/cover;
   height: 290px;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  -o-transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
 }
 
 .archive-article__date {
@@ -767,7 +853,7 @@ body {
 
 .blocks {
   display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 493px));
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
   grid-template-rows: repeat(2, minmax(300px, 1fr));
   row-gap: 20px;
   -webkit-column-gap: 20px;
@@ -826,6 +912,11 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   height: 100%;
+}
+
+.blocks__item-inner svg {
+  width: 100%;
+  padding: 30px 0;
 }
 
 .blocks__image-wrap {
@@ -917,6 +1008,27 @@ body {
   min-width: 0;
 }
 
+.btn-accent {
+  font-size: 20px;
+  font-weight: 600;
+  color: #7A18D5;
+  padding: 0.9em 2.2em;
+  border: 2px solid #7A18D5;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.btn-accent:hover {
+  background: #7A18D5;
+  color: #fff;
+}
+
+.btn-accent:active {
+  background: #3B2E56;
+  border-color: #3B2E56;
+}
+
 .business {
   padding-top: 170px;
   padding-bottom: 230px;
@@ -996,7 +1108,7 @@ body {
   height: 20px;
   left: -22px;
   top: calc(50% - 10px);
-  background: url("../../img/capital-arrow.svg") no-repeat center center;
+  background: url("../img/capital-arrow.svg") no-repeat center center;
   -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -1573,7 +1685,7 @@ body {
   position: absolute;
   width: 21px;
   height: 11px;
-  background: url("../../img/accordion-arrow.svg") no-repeat center;
+  background: url("../img/accordion-arrow.svg") no-repeat center;
   top: calc(50% - 5px);
   right: 20px;
 }
@@ -1850,7 +1962,7 @@ body {
 }
 
 .get-dbx__item--bitforex .get-dbx__img-wrap {
-  background: url("../../img/get-dbx-bitforex.svg");
+  background: url("../img/get-dbx-bitforex.svg");
 }
 
 .get-dbx__item--bitforex:hover {
@@ -1862,7 +1974,7 @@ body {
 }
 
 .get-dbx__item--bitforex:hover .get-dbx__img-wrap {
-  background: url("../../img/get-dbx-bitforex-active.svg");
+  background: url("../img/get-dbx-bitforex-active.svg");
 }
 
 .get-dbx__item--bitmart {
@@ -1871,7 +1983,7 @@ body {
 }
 
 .get-dbx__item--bitmart .get-dbx__img-wrap {
-  background: url("../../img/get-dbx-bitmart.svg");
+  background: url("../img/get-dbx-bitmart.svg");
 }
 
 .get-dbx__item--bitmart:hover {
@@ -1883,7 +1995,7 @@ body {
 }
 
 .get-dbx__item--bitmart:hover .get-dbx__img-wrap {
-  background: url("../../img/get-dbx-bitmart-active.svg");
+  background: url("../img/get-dbx-bitmart-active.svg");
 }
 
 .get-dbx__item--lbank {
@@ -1892,7 +2004,7 @@ body {
 }
 
 .get-dbx__item--lbank .get-dbx__img-wrap {
-  background: url("../../img/get-dbx-lbank.svg");
+  background: url("../img/get-dbx-lbank.svg");
 }
 
 .get-dbx__item--lbank:hover {
@@ -1904,7 +2016,7 @@ body {
 }
 
 .get-dbx__item--lbank:hover .get-dbx__img-wrap {
-  background: url("../../img/get-dbx-lbank-active.svg");
+  background: url("../img/get-dbx-lbank-active.svg");
 }
 
 .get-dbx__item--latoken {
@@ -1913,7 +2025,7 @@ body {
 }
 
 .get-dbx__item--latoken .get-dbx__img-wrap {
-  background: url("../../img/get-dbx-latoken.svg");
+  background: url("../img/get-dbx-latoken.svg");
 }
 
 .get-dbx__item--latoken:hover {
@@ -1925,7 +2037,7 @@ body {
 }
 
 .get-dbx__item--latoken:hover .get-dbx__img-wrap {
-  background: url("../../img/get-dbx-latoken-active.svg");
+  background: url("../img/get-dbx-latoken-active.svg");
 }
 
 .get-dbx__item--probit {
@@ -1934,7 +2046,7 @@ body {
 }
 
 .get-dbx__item--probit .get-dbx__img-wrap {
-  background: url("../../img/get-dbx-probit.svg");
+  background: url("../img/get-dbx-probit.svg");
 }
 
 .get-dbx__item--probit:hover {
@@ -1946,7 +2058,7 @@ body {
 }
 
 .get-dbx__item--probit:hover .get-dbx__img-wrap {
-  background: url("../../img/get-dbx-probit-active.svg");
+  background: url("../img/get-dbx-probit-active.svg");
 }
 
 .get-dbx__item--whitebit {
@@ -1955,7 +2067,7 @@ body {
 }
 
 .get-dbx__item--whitebit .get-dbx__img-wrap {
-  background: url("../../img/get-dbx-whitebit.svg");
+  background: url("../img/get-dbx-whitebit.svg");
 }
 
 .get-dbx__item--whitebit:hover {
@@ -1967,7 +2079,7 @@ body {
 }
 
 .get-dbx__item--whitebit:hover .get-dbx__img-wrap {
-  background: url("../../img/get-dbx-whitebit-active.svg");
+  background: url("../img/get-dbx-whitebit-active.svg");
 }
 
 .get-dbx__item--pancakeswap {
@@ -1976,7 +2088,7 @@ body {
 }
 
 .get-dbx__item--pancakeswap .get-dbx__img-wrap {
-  background: url("../../img/get-dbx-pancakeswap.svg");
+  background: url("../img/get-dbx-pancakeswap.svg");
 }
 
 .get-dbx__item--pancakeswap:hover {
@@ -1988,7 +2100,7 @@ body {
 }
 
 .get-dbx__item--pancakeswap:hover .get-dbx__img-wrap {
-  background: url("../../img/get-dbx-pancakeswap-active.svg");
+  background: url("../img/get-dbx-pancakeswap-active.svg");
 }
 
 .get-dbx__item--coinsbit {
@@ -1997,7 +2109,7 @@ body {
 }
 
 .get-dbx__item--coinsbit .get-dbx__img-wrap {
-  background: url("../../img/get-dbx-coinsbit.svg");
+  background: url("../img/get-dbx-coinsbit.svg");
 }
 
 .get-dbx__item--coinsbit:hover {
@@ -2009,7 +2121,7 @@ body {
 }
 
 .get-dbx__item--coinsbit:hover .get-dbx__img-wrap {
-  background: url("../../img/get-dbx-coinsbit-active.svg");
+  background: url("../img/get-dbx-coinsbit-active.svg");
 }
 
 .get-dbx__item--uniswap {
@@ -2018,7 +2130,7 @@ body {
 }
 
 .get-dbx__item--uniswap .get-dbx__img-wrap {
-  background: url("../../img/get-dbx-uniswap.svg");
+  background: url("../img/get-dbx-uniswap.svg");
 }
 
 .get-dbx__item--uniswap:hover {
@@ -2030,7 +2142,7 @@ body {
 }
 
 .get-dbx__item--uniswap:hover .get-dbx__img-wrap {
-  background: url("../../img/get-dbx-uniswap-active.svg");
+  background: url("../img/get-dbx-uniswap-active.svg");
 }
 
 .get-dbx__item-inner {
@@ -2214,6 +2326,52 @@ body {
   padding: 4rem;
 }
 
+.meta-tags-nav {
+  margin-bottom: 50px;
+}
+
+.meta-tags-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.meta-tags-nav__item:not(:first-child) {
+  margin-left: 15px;
+}
+
+.meta-tags-nav__item {
+  margin-bottom: 15px;
+}
+
+.meta-tags-nav__link {
+  display: inline-block;
+  font-size: calc(18px + 3 * ((100vw - 428px) / 1122));
+  padding: 0.3em 0.8em;
+  text-decoration: none;
+  color: #3B2E56;
+  border: 1px solid #7A18D5;
+  white-space: nowrap;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.meta-tags-nav__link--active {
+  background: #7A18D5;
+  color: #fff;
+}
+
+.meta-tags-nav__link:hover {
+  background: #C1A9E0;
+  color: #3B2E56;
+}
+
 .nav-header-burger {
   display: none;
 }
@@ -2379,7 +2537,7 @@ body {
   right: 0;
   width: 349px;
   height: 307px;
-  background: url("../../img/bg-other-question.svg") no-repeat;
+  background: url("../img/bg-other-question.svg") no-repeat;
   z-index: 1;
   pointer-events: none;
 }
@@ -2732,7 +2890,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  cursor: url("../../img/scroll1.svg"), pointer;
+  cursor: url("../img/scroll1.svg"), pointer;
 }
 
 .roadmap__item {
@@ -2790,15 +2948,15 @@ body {
 }
 
 .roadmap__title-year--2021 {
-  background: url("../../img/2021.png") repeat-x center left;
+  background: url("../img/2021.png") repeat-x center left;
 }
 
 .roadmap__title-year--2022 {
-  background: url("../../img/2022.png") repeat-x center left;
+  background: url("../img/2022.png") repeat-x center left;
 }
 
 .roadmap__title-year--2023 {
-  background: url("../../img/2023.png") repeat-x center left;
+  background: url("../img/2023.png") repeat-x center left;
 }
 
 .roadmap__list {
@@ -2831,7 +2989,7 @@ body {
   height: 26px;
   top: 1px;
   left: 0;
-  background: url("../../img/list-marker.svg") no-repeat center center;
+  background: url("../img/list-marker.svg") no-repeat center center;
 }
 
 .roadmap__list-text {
@@ -2889,6 +3047,12 @@ body {
 
 .running-line #undefined1 {
   padding-left: 40px;
+}
+
+.show-more-btn {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 160px;
 }
 
 .slider-comparing {
@@ -2974,107 +3138,107 @@ body {
 
 @supports (-webkit-appearance:none) {
   .archive-article__image {
-    background-image: url("../../img/article-1.webp");
+    background-image: url("../img/article-1.webp");
   }
 
   .capital__item div::after {
-    background: url("../../img/capital-arrow.svg") no-repeat center center;
+    background: url("../img/capital-arrow.svg") no-repeat center center;
   }
 
   .faqs__content-title::after {
-    background: url("../../img/accordion-arrow.svg") no-repeat center;
+    background: url("../img/accordion-arrow.svg") no-repeat center;
   }
 
   .get-dbx__item--bitforex .get-dbx__img-wrap {
-    background-image: url("../../img/get-dbx-bitforex.svg");
+    background-image: url("../img/get-dbx-bitforex.svg");
   }
 
   .get-dbx__item--bitforex:hover .get-dbx__img-wrap {
-    background-image: url("../../img/get-dbx-bitforex-active.svg");
+    background-image: url("../img/get-dbx-bitforex-active.svg");
   }
 
   .get-dbx__item--bitmart .get-dbx__img-wrap {
-    background-image: url("../../img/get-dbx-bitmart.svg");
+    background-image: url("../img/get-dbx-bitmart.svg");
   }
 
   .get-dbx__item--bitmart:hover .get-dbx__img-wrap {
-    background-image: url("../../img/get-dbx-bitmart-active.svg");
+    background-image: url("../img/get-dbx-bitmart-active.svg");
   }
 
   .get-dbx__item--lbank .get-dbx__img-wrap {
-    background-image: url("../../img/get-dbx-lbank.svg");
+    background-image: url("../img/get-dbx-lbank.svg");
   }
 
   .get-dbx__item--lbank:hover .get-dbx__img-wrap {
-    background-image: url("../../img/get-dbx-lbank-active.svg");
+    background-image: url("../img/get-dbx-lbank-active.svg");
   }
 
   .get-dbx__item--latoken .get-dbx__img-wrap {
-    background-image: url("../../img/get-dbx-latoken.svg");
+    background-image: url("../img/get-dbx-latoken.svg");
   }
 
   .get-dbx__item--latoken:hover .get-dbx__img-wrap {
-    background-image: url("../../img/get-dbx-latoken-active.svg");
+    background-image: url("../img/get-dbx-latoken-active.svg");
   }
 
   .get-dbx__item--probit .get-dbx__img-wrap {
-    background-image: url("../../img/get-dbx-probit.svg");
+    background-image: url("../img/get-dbx-probit.svg");
   }
 
   .get-dbx__item--probit:hover .get-dbx__img-wrap {
-    background-image: url("../../img/get-dbx-probit-active.svg");
+    background-image: url("../img/get-dbx-probit-active.svg");
   }
 
   .get-dbx__item--whitebit .get-dbx__img-wrap {
-    background-image: url("../../img/get-dbx-whitebit.svg");
+    background-image: url("../img/get-dbx-whitebit.svg");
   }
 
   .get-dbx__item--whitebit:hover .get-dbx__img-wrap {
-    background-image: url("../../img/get-dbx-whitebit-active.svg");
+    background-image: url("../img/get-dbx-whitebit-active.svg");
   }
 
   .get-dbx__item--pancakeswap .get-dbx__img-wrap {
-    background-image: url("../../img/get-dbx-pancakeswap.svg");
+    background-image: url("../img/get-dbx-pancakeswap.svg");
   }
 
   .get-dbx__item--pancakeswap:hover .get-dbx__img-wrap {
-    background-image: url("../../img/get-dbx-pancakeswap-active.svg");
+    background-image: url("../img/get-dbx-pancakeswap-active.svg");
   }
 
   .get-dbx__item--coinsbit .get-dbx__img-wrap {
-    background-image: url("../../img/get-dbx-coinsbit.svg");
+    background-image: url("../img/get-dbx-coinsbit.svg");
   }
 
   .get-dbx__item--coinsbit:hover .get-dbx__img-wrap {
-    background-image: url("../../img/get-dbx-coinsbit-active.svg");
+    background-image: url("../img/get-dbx-coinsbit-active.svg");
   }
 
   .get-dbx__item--uniswap .get-dbx__img-wrap {
-    background-image: url("../../img/get-dbx-uniswap.svg");
+    background-image: url("../img/get-dbx-uniswap.svg");
   }
 
   .get-dbx__item--uniswap:hover .get-dbx__img-wrap {
-    background-image: url("../../img/get-dbx-uniswap-active.svg");
+    background-image: url("../img/get-dbx-uniswap-active.svg");
   }
 
   .other-questions__decor {
-    background: url("../../img/bg-other-question.svg") no-repeat;
+    background: url("../img/bg-other-question.svg") no-repeat;
   }
 
   .roadmap__title-year--2021 {
-    background: url("../../img/2021.webp") repeat-x center left;
+    background: url("../img/2021.webp") repeat-x center left;
   }
 
   .roadmap__title-year--2022 {
-    background: url("../../img/2022.webp") repeat-x center left;
+    background: url("../img/2022.webp") repeat-x center left;
   }
 
   .roadmap__title-year--2023 {
-    background: url("../../img/2023.webp") repeat-x center left;
+    background: url("../img/2023.webp") repeat-x center left;
   }
 
   .roadmap__list-item ::before {
-    background: url("../../img/list-marker.svg") no-repeat center center;
+    background: url("../img/list-marker.svg") no-repeat center center;
   }
 }
 
@@ -3155,6 +3319,10 @@ body {
   .footer,
   .footer a {
     font-size: 20px;
+  }
+
+  .meta-tags-nav__link {
+    font-size: 21px;
   }
 
   .nav-header__list li a {
@@ -3281,6 +3449,14 @@ body {
     margin-left: 50px;
   }
 
+  .problem-solve-content {
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  }
+
+  .problem-solve-content__item {
+    padding: 20px;
+  }
+
   .faqs-page .promo {
     height: auto;
     padding: 5% 0 15%;
@@ -3309,8 +3485,8 @@ body {
   }
 
   .blocks {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 460px);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
   }
 
   .business .blocks__item-wrap {
@@ -3733,6 +3909,26 @@ body {
   .advantages-page__item {
     margin: 0;
     padding: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .advantages-page__item svg {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    margin-bottom: 15px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .advantages-page__wrap {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    max-width: initial;
   }
 
   .archive-article + .archive-article {
@@ -3741,16 +3937,6 @@ body {
 
   .blocks__item-wrap {
     padding: 0 30px 40px;
-  }
-
-  .blocks {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
   }
 
   .business .blocks {
@@ -4075,6 +4261,16 @@ body {
 
   .header {
     padding: 30px 0 25px;
+  }
+
+  .meta-tags-nav__list {
+    overflow-x: auto;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .meta-tags-nav__item:not(:first-child) {
+    margin-left: 10px;
   }
 
   .nav-header.open {

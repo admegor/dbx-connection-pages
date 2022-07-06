@@ -4,8 +4,11 @@
     grid-template-rows: 320px;
     grid-gap: 20px;
     grid-template-areas: 
-        ".     block1 block2"
-        "block3 block4 block5";
+    ".     block1 block2"
+    "block3 block4 block5";
+    @include xl {
+        grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    }
         @include lg {
             display: flex;
         }
@@ -14,6 +17,9 @@
         transition: all .2s ease-in;
         z-index: 1;
         cursor: pointer;
+        @include xl {
+            padding: 20px
+        }
         & svg {
             display: block;
             margin-bottom: 20px;

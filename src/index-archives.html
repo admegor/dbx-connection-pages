@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заголовок</title>
+    <link rel="stylesheet" href="css/build.min.css">
+</head>
+
+<body>
+    
+    @@include("html/chunk/header.html")
+    <main class="main dbx">
+        <div class="container">
+            <h1 class="page-title">Blog</h1>
+            <div class="meta-tags-nav">
+                <ul class="meta-tags-nav__list">
+                    <li class="meta-tags-nav__item">
+                        <a class="meta-tags-nav__link meta-tags-nav__link--active" href="#">All topics</a>
+                    </li>
+                    <li class="meta-tags-nav__item">
+                        <a class="meta-tags-nav__link" href="#">Topic 1</a>
+                    </li>
+                    <li class="meta-tags-nav__item">
+                        <a class="meta-tags-nav__link" href="#">Topic 2</a>
+                    </li>
+                    <li class="meta-tags-nav__item">
+                        <a class="meta-tags-nav__link" href="#">Topic 3</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="blog-wrap">
+                <article class="archive-article">
+                    <a class="archive-article__image-link" href="#">
+                        <div class="archive-article__image" style="background-image: url(img/article-1.jpg);"></div>
+                    </a>
+                    <div class="archive-article__date">22.03.2022</div>
+                    <h3 class="archive-article__title">
+                        <a class="archive-article__title-link" href="#">Best of the new cryptocurrencies<br> to consider buying in 2022</a>
+                    </h3>
+                    <ul class="archive-article__tags">
+                        <li class="archive-article__tag">
+                            <span>Topic 1</span>
+                        </li>
+                        <li class="archive-article__tag">
+                            <span>Topic 2</span>
+                        </li>
+                    </ul>
+                </article>
+                <article class="archive-article">
+                    <a class="archive-article__image-link" href="#">
+                        <div class="archive-article__image" style="background-image: url(img/article-2.jpg);"></div>
+                    </a>
+                    <div class="archive-article__date">22.03.2022</div>
+                    <h3 class="archive-article__title">
+                        <a class="archive-article__title-link" href="#">Best of the new cryptocurrencies to consider buying in 2022</a>
+                    </h3>
+                    <ul class="archive-article__tags">
+                        <li class="archive-article__tag">
+                            <span>Topic 1</span>
+                        </li>
+                        <li class="archive-article__tag">
+                            <span>Topic 2</span>
+                        </li>
+                    </ul>
+                </article>
+                <article class="archive-article">
+                    <a class="archive-article__image-link" href="#">
+                        <div class="archive-article__image" style="background-image: url(img/article-3.jpg);"></div>
+                    </a>
+                    <div class="archive-article__date">22.03.2022</div>
+                    <h3 class="archive-article__title">
+                        <a class="archive-article__title-link" href="#">Best of the new cryptocurrencies to consider buying in 2022</a>
+                    </h3>
+                    <ul class="archive-article__tags">
+                        <li class="archive-article__tag">
+                            <span>Topic 1</span>
+                        </li>
+                        <li class="archive-article__tag">
+                            <span>Topic 2</span>
+                        </li>
+                    </ul>
+                </article>
+                <article class="archive-article">
+                    <a class="archive-article__image-link" href="#">
+                        <div class="archive-article__image" style="background-image: url(img/article-4.jpg);"></div>
+                    </a>
+                    <div class="archive-article__date">22.03.2022</div>
+                    <h3 class="archive-article__title">
+                        <a class="archive-article__title-link" href="#">Best of the new cryptocurrencies to consider buying in 2022</a>
+                    </h3>
+                    <ul class="archive-article__tags">
+                        <li class="archive-article__tag">
+                            <span>Topic 1</span>
+                        </li>
+                        <li class="archive-article__tag">
+                            <span>Topic 2</span>
+                        </li>
+                    </ul>
+                </article>
+                <article class="archive-article">
+                    <a class="archive-article__image-link" href="#">
+                        <div class="archive-article__image" style="background-image: url(img/article-5.jpg);"></div>
+                    </a>
+                    <div class="archive-article__date">22.03.2022</div>
+                    <h3 class="archive-article__title">
+                        <a class="archive-article__title-link" href="#">Best of the new cryptocurrencies to consider buying in 2022</a>
+                    </h3>
+                    <ul class="archive-article__tags">
+                        <li class="archive-article__tag">
+                            <span>Topic 1</span>
+                        </li>
+                        <li class="archive-article__tag">
+                            <span>Topic 2</span>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+            <div class="show-more-btn__wrap">
+                <button class="show-more-btn btn-accent button-reset" type="button">Show more</button>
+            </div>
+        </div>
+    </main>
+    @@include("html/chunk/footer.html")
+    
+    <script src="../js/main.js" defer></script>
+</body>
+
+</html>
