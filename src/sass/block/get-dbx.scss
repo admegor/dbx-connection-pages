@@ -25,6 +25,7 @@
         padding: 30px 10px 30px 50px;
         cursor: pointer;
         transition: all .2s ease;
+        text-decoration: none;
         @include md {
             padding: 15px 5px 15px 20px;
         }

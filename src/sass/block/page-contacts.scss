@@ -1,0 +1,95 @@
+.page-contacts {
+    padding-top: 50px;
+    @include md {
+        padding-top: 20px;
+    }
+    &__inner {
+        border-bottom: 1px solid #DDDDDD;
+    }
+    &__icon {
+        padding: 40px;
+        & svg {
+            vertical-align: top;
+            @include xl {
+                width: 60px;
+                height: 60px;
+            }
+            @include md {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 200px;
+        @include lg {
+            padding-bottom: 100px;
+        }
+        @include md {
+            padding-bottom: 60px;
+        }
+    }
+    &__item {
+        width: 48%;
+        border-width: 2px;
+        border-style: solid;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+        &--tg .page-contacts__icon {
+            background-color: $accent;
+        }
+        &--insta .page-contacts__icon {
+            background-color: #E06AE9;
+        }
+        &--email .page-contacts__icon {
+            background-color: #2572FF;
+        }
+        &--locate .page-contacts__icon {
+            background-color: #FFAD28;
+        }
+        &--tg {
+            border-color: $accent;
+        }
+        &--insta {
+            border-color: #E06AE9;
+        }
+        &--email {
+            border-color: #2572FF;
+        }
+        &--locate {
+            border-color: #FFAD28;
+        }
+    }
+    &__item:nth-child(2n) {
+        margin-left: 2%;
+    }
+    &__text {
+        margin-left: 40px;
+        @include adaptiv-font (26, 16);
+        font-weight: 600;
+        @include xl {
+            margin-left: 20px;
+        }
+    }
+    @include lg {
+        &__item {
+            width: 100%;
+        }
+        &__item:nth-child(2n) {
+            margin-left: 0;
+        }
+        &__icon {
+            padding: 30px;
+        }
+    }
+    @include md {
+        &__icon {
+            padding: 15px;
+        }
+    }
+}

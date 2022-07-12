@@ -1,0 +1,42 @@
+.team-social {
+    @include list-reset;
+    display: flex;
+    &__item + &__item {
+        margin-left: 25px;
+        @include md {
+            margin-left: 15px;
+        }
+    }
+    &__link {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: opacity .2s ease-in;
+        opacity: .6;
+        &--insta {
+            background-image: url("../../img/team_instagram-filled.svg");
+        }
+        &--tw {
+            background-image: url("../../img/team_twitter-fill.svg");
+        }
+        &--tg {
+            background-image: url("../../img/team_telegram-plane.svg");
+        }
+        &--fb {
+            background-image: url("../../img/team_facebook-f.svg");
+        }
+        &--in {
+            background-image: url("../../img/team_linkedin-in.svg");
+        }
+        &:hover {
+            opacity: 1;
+        }
+        @include md {
+            width: 24px;
+            height: 24px;
+            background-size: contain;
+        }
+    }
+}

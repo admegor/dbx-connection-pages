@@ -55,7 +55,7 @@ eval("$('.faqs__content-title').click(function() {\r\n        \r\n    $(\".faqs_
   \**************************************/
 /***/ (function() {
 
-eval("const headerLangBtn = document.querySelector('.header-lang__btn');\r\nconst headerLangMenu = document.querySelector('.header-lang__menu');\r\n\r\nheaderLangBtn.addEventListener('focus', () => headerLangMenu.classList.add('header-lang__menu--show'), true) \r\nheaderLangBtn.addEventListener('blur', () => headerLangMenu.classList.remove('header-lang__menu--show'), true);\n\n//# sourceURL=webpack://y/./src/js/module/header-lang.js?");
+eval("const headerLangBtn = document.querySelector('.header-lang__btn');\r\nconst headerLangMenu = document.querySelector('.header-lang__menu');\r\n\r\nif (headerLangBtn) {\r\n    headerLangBtn.addEventListener('focus', () => headerLangMenu.classList.add('header-lang__menu--show'), true) \r\n    headerLangBtn.addEventListener('blur', () => headerLangMenu.classList.remove('header-lang__menu--show'), true);\r\n}\r\n\n\n//# sourceURL=webpack://y/./src/js/module/header-lang.js?");
 
 /***/ }),
 
