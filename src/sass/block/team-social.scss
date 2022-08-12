@@ -30,6 +30,21 @@
         &--in {
             background-image: url("../../img/team_linkedin-in.svg");
         }
+        &--web {
+            background-image: url("../../img/team_globe.svg");
+        }
+        &--be {
+            background-image: url("../../img/team_behance-fill.svg");
+        }
+        &--gh {
+            background-image: url("../../img/team_github-fill.svg");
+        }
+        &--vk {
+            background-image: url("../../img/team_vk-fill.svg");
+        }
+        &--yt {
+            background-image: url("../../img/team_youtube.svg");
+        }
         &:hover {
             opacity: 1;
         }

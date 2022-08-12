@@ -1,13 +1,13 @@
 .problem-solve-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: 320px;
     grid-gap: 20px;
     grid-template-areas: 
     ".     block1 block2"
     "block3 block4 block5";
     @include xl {
-        grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+        // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
         @include lg {
             display: flex;

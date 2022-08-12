@@ -1,0 +1,61 @@
+.page-single {
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+    @include lg {
+        padding: 60px 0;
+    }
+    @include md {
+        padding: 30px 0;
+    }
+    &__title {
+        max-width: 1100px;
+        text-align: center;
+    }
+    & p {
+        display: block;
+        margin: 1.5em auto;
+    }
+    &__main-image {
+        max-height: 400px;
+        margin: 0 auto;
+        display: block;
+    }
+    &__image {
+        display: block;
+        margin: 0 auto;
+    }
+    & ul,
+    & ol {
+        display: block;
+        margin: 0 auto;
+    }
+    &__date {
+        text-align: center;
+        font-size: 20px;
+        color: #3B2E56;
+    }
+    &__decor {
+        position: absolute;
+        // overflow: hidden;
+        @include lg {
+            display: none;
+        }
+        &--1 {
+            top: 1000px;
+            right: 0;
+            width: 344px;
+            height: 844px;
+            background: url("../../img/bg-single-1.png") no-repeat center;
+            z-index: -1;
+        }
+        &--2 {
+            top: 2000px;
+            left: 0;
+            width: 343px;
+            height: 711px;
+            background: url("../../img/bg-single-2.png") no-repeat center;
+            z-index: -1;
+        }
+    }
+}

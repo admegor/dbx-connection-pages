@@ -1,0 +1,76 @@
+.page-default {
+    & h1 {
+        color: #000000;
+        font-weight: 700;
+        @include adaptiv-font(64, 34);
+        max-width: 1210px;
+    }
+    & h2 {
+        color: #000000;
+        font-weight: 600;
+        @include adaptiv-font(62, 32);
+        max-width: 1050px;
+    }
+    & h3 {
+        color: #262626;
+        font-weight: 600;
+        @include adaptiv-font(40, 28);
+        max-width: 680px;
+    }
+    & h4 {
+        color: #3B2E56;
+        font-weight: 700;
+        @include adaptiv-font(32, 24);
+    }
+    & p {
+        color: #3B2E56;
+        line-height: 1.5;
+        @include adaptiv-font(20, 14);
+        max-width: 800px;
+    }
+    & a {
+        font-size: inherit;
+        color: $accent;
+        transition: text-decoration .2s ease;
+        text-decoration: none;
+        max-width: 800px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    ul {
+        max-width: 800px;
+        @include list-reset;
+        @include lg {
+            padding: 20px;
+        }
+    }
+    ol {
+        max-width: 800px;
+    }
+    ul li {
+        padding-left: 45px;
+        position: relative;
+        margin: 15px 0;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 26px;
+            top: 4px;
+            left: 0;
+            background: url("../../img/list-marker.svg") no-repeat center center;
+            @include lg {
+                width: 14px;
+                height: 18px;
+                background-size: contain;
+            }
+        }
+    }
+    ol li::marker {
+        color: #7a18d5;
+    }
+    li {
+        @include adaptiv-font(20, 14);
+    }
+}
